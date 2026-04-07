@@ -6,7 +6,7 @@
     "project_name": "dream-zero-guide",
     "version": "1.0.0",
     "created_at": "2026-04-07T07:37:58.061Z",
-    "updated_at": "2026-04-07T08:43:34.474Z"
+    "updated_at": "2026-04-07T08:42:57.991Z"
   },
   "tasks": {
     "3951f335-5b54-460d-a59b-22604a347f2f": {
@@ -159,7 +159,7 @@
       "id": "395e913e-4e84-4d65-a853-3108d7f6fcca",
       "title": "Verify equations and refine system chapters for DreamZero",
       "description": "Check the core equations and systems narrative against the PDF, then refine the equations, system, and formula-sheet pages so mathematical content is accurate, explained in plain language, and aligned with the documentation build.",
-      "status": "completed",
+      "status": "in_review",
       "priority": "top",
       "success_criteria": [
         {
@@ -219,7 +219,7 @@
       "notes": "Context entrypoint for new sessions: read .memo/memodocs/user_spec_dream-zero-guide.md, .memo/memodocs/tech_spec_dream-zero-guide.md, and CLAUDE.md before touching equations or build configuration.\n\nTreat DreamZero-Nvidia.pdf as the final authority and docs/reference/source-verification.md as the working verification log once task 3951f33 is complete.\n\nDo not leave formula corrections only in prose; update formula-sheet.md so later sessions have one reliable lookup page.\n\nRefined docs/lecture/05-core-equations.md, docs/lecture/06-system-and-inference.md, and docs/reference/formula-sheet.md to distinguish verified equations from pedagogical compression, add immediate plain-language explanations after displayed formulas, and incorporate verified latency anchors from the DreamZero PDF/source-verification workflow. Verified rendering with .venv\\\\Scripts\\\\python -m mkdocs build.",
       "c7_verified": [],
       "created_at": "2026-04-07T07:55:48.571Z",
-      "updated_at": "2026-04-07T08:43:34.473Z",
+      "updated_at": "2026-04-07T08:42:57.991Z",
       "completed_at": "2026-04-07T08:42:57.991Z",
       "edges": [
         "cd0343a6-de59-423e-9ff8-8fc8b5370385"
@@ -229,7 +229,7 @@
       "id": "cd0343a6-de59-423e-9ff8-8fc8b5370385",
       "title": "Write transfer and reference synthesis for DreamZero",
       "description": "Refine the transfer, Polanyi, report, and source-map materials so the final reference narrative is consistent with the refined lecture chapters, explicit about evidence limits, and reusable by later contributors as the stable synthesis layer.",
-      "status": "ready",
+      "status": "blocked",
       "priority": "second",
       "success_criteria": [
         {
@@ -388,17 +388,17 @@
   ],
   "indexes": {
     "byStatus": {
-      "ready": [
-        "cd0343a6-de59-423e-9ff8-8fc8b5370385"
-      ],
+      "ready": [],
       "in_progress": [],
-      "in_review": [],
-      "completed": [
-        "3951f335-5b54-460d-a59b-22604a347f2f",
-        "879265ec-b906-4cca-9948-e5bf5c8a2c62",
+      "in_review": [
         "395e913e-4e84-4d65-a853-3108d7f6fcca"
       ],
+      "completed": [
+        "3951f335-5b54-460d-a59b-22604a347f2f",
+        "879265ec-b906-4cca-9948-e5bf5c8a2c62"
+      ],
       "blocked": [
+        "cd0343a6-de59-423e-9ff8-8fc8b5370385",
         "c27d4d76-ca06-43ba-b361-7b625c3f8e42"
       ]
     },

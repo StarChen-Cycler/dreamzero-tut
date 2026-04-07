@@ -2,6 +2,8 @@
 
 This page keeps the most important formulas in one place.
 
+Use [Source Verification](source-verification.md) to determine whether a formula below is fully source-literal or a teaching simplification.
+
 ## Teaching Formulas
 
 These are pedagogical simplifications used by the guide:
@@ -10,13 +12,22 @@ $$
 \text{Task Success} \approx \text{Semantic Understanding} + \text{Physical Execution Skill}
 $$
 
+Interpretation:
+task success needs both semantic understanding and physically competent execution.
+
 $$
 \text{Generalization Gap} \approx \text{Needed Physical Prior} - \text{Learned Physical Prior}
 $$
 
+Interpretation:
+the more physical understanding the model lacks, the worse zero-shot performance should be.
+
 $$
 \text{formal description} + \text{practical judgment}
 $$
+
+Interpretation:
+the lecture uses Polanyi's idea that explicit equations do not exhaust real engineering understanding.
 
 ## Paper-Derived Formulas
 
@@ -29,15 +40,28 @@ $$
 \pi_0(\mathbf{a}_{l:l+H} \mid \mathbf{o}_{0:l+H}, \mathbf{q}_l)
 $$
 
+Verification status:
+checked semantically against PDF pages 6-7.
+The extracted source label attached to this equation is OCR-corrupted, but the equation body and numbering are usable.
+
+Interpretation:
+DreamZero treats action prediction as tied to a predicted future world trajectory rather than as an isolated action-only mapping.
+
 ### Noisy Interpolation
 
 $$
 \mathbf{z}_{t_k}^{k} = t_k \mathbf{z}_{1}^{k} + (1 - t_k)\mathbf{z}_{0}^{k}
 $$
 
+Interpretation:
+the noisy video latent is an interpolation between clean signal and Gaussian noise.
+
 $$
 \mathbf{a}_{t_k}^{k} = t_k \mathbf{a}_{1}^{k} + (1 - t_k)\mathbf{a}_{0}^{k}
 $$
+
+Interpretation:
+the noisy action follows the same interpolation pattern, which keeps the two modalities aligned during denoising.
 
 ### Flow-Matching Objective
 
@@ -51,6 +75,13 @@ w(t_k)
 \right\rVert^2
 \right]
 $$
+
+Verification status:
+checked structurally against PDF page 7.
+Exact typography and spacing should still be spot-checked in the PDF during any later publication pass.
+
+Interpretation:
+the model is trained to predict the correct denoising direction for the joint video-action state.
 
 ## Interpretation Rule
 
