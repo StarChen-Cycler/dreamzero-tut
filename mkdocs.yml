@@ -1,0 +1,64 @@
+site_name: DreamZero Guide
+site_description: Lecture and standard reference for deconstructing DreamZero from logic root to root cause.
+site_author: Codex
+docs_dir: docs
+site_dir: site
+strict: true
+
+theme:
+  name: material
+  features:
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - navigation.instant
+    - content.code.copy
+    - search.highlight
+    - search.share
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.details
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+extra_javascript:
+  - javascripts/katex.js
+  - https://unpkg.com/katex@0/dist/katex.min.js
+  - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
+
+extra_css:
+  - https://unpkg.com/katex@0/dist/katex.min.css
+  - stylesheets/extra.css
+
+nav:
+  - Home: index.md
+  - Lecture:
+    - Course Map: lecture/00-course-map.md
+    - Routed Intake: lecture/01-routed-intake.md
+    - Math and Robotics Primer: lecture/02-prerequisites.md
+    - Why VLAs Hit a Wall: lecture/03-why-vlas-hit-a-wall.md
+    - Logic Root of DreamZero: lecture/04-logic-root-of-dreamzero.md
+    - Core Equations: lecture/05-core-equations.md
+    - System and Inference: lecture/06-system-and-inference.md
+    - Transfer and Generalization: lecture/07-transfer-and-generalization.md
+    - Polanyi Lens: lecture/08-polanyi-lens.md
+  - Report:
+    - Standard Reference: report/dreamzero-standard-reference.md
+  - Reference:
+    - Glossary: reference/glossary.md
+    - Formula Sheet: reference/formula-sheet.md
+    - Source Map: reference/source-map.md
