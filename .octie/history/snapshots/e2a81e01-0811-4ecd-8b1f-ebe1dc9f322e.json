@@ -6,14 +6,14 @@
     "project_name": "dream-zero-guide",
     "version": "1.0.0",
     "created_at": "2026-04-07T07:37:58.061Z",
-    "updated_at": "2026-04-07T08:20:14.685Z"
+    "updated_at": "2026-04-07T08:19:39.091Z"
   },
   "tasks": {
     "3951f335-5b54-460d-a59b-22604a347f2f": {
       "id": "3951f335-5b54-460d-a59b-22604a347f2f",
       "title": "Create source verification note for DreamZero paper",
       "description": "Compare the extracted Doc2x markdown and figures against the source PDF, capture OCR and notation issues, and establish a verification note that later lecture and report tasks must follow before refining claims or formulas.",
-      "status": "completed",
+      "status": "in_review",
       "priority": "top",
       "success_criteria": [
         {
@@ -68,7 +68,7 @@
       "notes": "Context entrypoint for new sessions: read .memo/memodocs/user_spec_dream-zero-guide.md, .memo/memodocs/tech_spec_dream-zero-guide.md, and CLAUDE.md before editing anything.\n\nPlanning constraints live in system-development-principles-canonical.md and question-problem-routing-system-v3.md; preserve their scope and routing rules while auditing source truth.\n\nDo not edit sources/doc2x/DreamZero-Nvidia.md in place unless a traceable correction policy is added; prefer recording verified issues in docs/reference/source-verification.md.\n\nImplemented docs/reference/source-verification.md, updated docs/reference/source-map.md, added source verification to mkdocs.yml navigation, and verified the docs build with .venv\\\\Scripts\\\\python -m mkdocs build. Verification method used DreamZero-Nvidia.pdf as source of truth, sources/doc2x/DreamZero-Nvidia.md as math-preserving working text, and pdftotext -layout for cross-checking names, punctuation, and numeric claims.",
       "c7_verified": [],
       "created_at": "2026-04-07T07:54:46.624Z",
-      "updated_at": "2026-04-07T08:20:14.685Z",
+      "updated_at": "2026-04-07T08:19:39.091Z",
       "completed_at": "2026-04-07T08:19:39.091Z",
       "edges": [
         "879265ec-b906-4cca-9948-e5bf5c8a2c62",
@@ -79,7 +79,7 @@
       "id": "879265ec-b906-4cca-9948-e5bf5c8a2c62",
       "title": "Refine lecture foundation chapters for non-roboticist readers",
       "description": "Strengthen the course map, routed intake, prerequisite, VLA diagnosis, and logic-root chapters so the opening lecture path is source-aware, accessible to math-literate readers, and explicit about pedagogical versus source-literal claims.",
-      "status": "ready",
+      "status": "blocked",
       "priority": "top",
       "success_criteria": [
         {
@@ -156,7 +156,7 @@
       "id": "395e913e-4e84-4d65-a853-3108d7f6fcca",
       "title": "Verify equations and refine system chapters for DreamZero",
       "description": "Check the core equations and systems narrative against the PDF, then refine the equations, system, and formula-sheet pages so mathematical content is accurate, explained in plain language, and aligned with the documentation build.",
-      "status": "ready",
+      "status": "blocked",
       "priority": "top",
       "success_criteria": [
         {
@@ -382,16 +382,15 @@
   ],
   "indexes": {
     "byStatus": {
-      "ready": [
-        "879265ec-b906-4cca-9948-e5bf5c8a2c62",
-        "395e913e-4e84-4d65-a853-3108d7f6fcca"
-      ],
+      "ready": [],
       "in_progress": [],
-      "in_review": [],
-      "completed": [
+      "in_review": [
         "3951f335-5b54-460d-a59b-22604a347f2f"
       ],
+      "completed": [],
       "blocked": [
+        "879265ec-b906-4cca-9948-e5bf5c8a2c62",
+        "395e913e-4e84-4d65-a853-3108d7f6fcca",
         "cd0343a6-de59-423e-9ff8-8fc8b5370385",
         "c27d4d76-ca06-43ba-b361-7b625c3f8e42"
       ]

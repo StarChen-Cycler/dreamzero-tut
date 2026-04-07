@@ -73,6 +73,7 @@ desktop.ini
 .memo/
 .memocontent-hist/
 .memosymbols-hist/
+.venv/
 .pytest_cache/
 .svn/
 .tox/
@@ -85,6 +86,7 @@ htmlcov/
 memodocs/
 memotree/
 node_modules/
+site/
 venv/
 
 # Files

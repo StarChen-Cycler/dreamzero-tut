@@ -61,4 +61,5 @@ nav:
   - Reference:
     - Glossary: reference/glossary.md
     - Formula Sheet: reference/formula-sheet.md
+    - Source Verification: reference/source-verification.md
     - Source Map: reference/source-map.md

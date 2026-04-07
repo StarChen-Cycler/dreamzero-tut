@@ -5,6 +5,7 @@
 - `DreamZero-Nvidia.pdf`
 - `sources/doc2x/DreamZero-Nvidia.md`
 - `sources/doc2x/images/`
+- `docs/reference/source-verification.md`
 
 ## Planning Constraints
 
@@ -16,12 +17,32 @@
 - Use the PDF as the final authority when OCR output is ambiguous.
 - Treat the extracted Markdown as the working text for chapter drafting.
 - Keep derived teaching statements separate from source statements.
+- When `pdftotext` and Doc2x disagree, prefer the PDF and log the discrepancy in `docs/reference/source-verification.md`.
 
 ## Known Risks
 
 - OCR artifacts exist in the extracted Markdown.
 - Some symbols and names may be slightly corrupted.
 - Equations should be checked before final publication.
+- `pdftotext` degrades equations and table layout, so it is a cross-check tool, not the final math source.
+
+## Concrete Checkpoints
+
+| Section | Source anchor | PDF pages | Purpose |
+| --- | --- | --- | --- |
+| Title, authors, abstract, main contribution claims | top of extracted source through early introduction | 1-3 | Verify naming, headline claims, and contribution summary |
+| Figure 4 plus Equations (1)-(3) | `sources/doc2x/DreamZero-Nvidia.md:81-123` | 5-7 | Verify architecture description and math anchors |
+| Table 1 and pretraining setup | `sources/doc2x/DreamZero-Nvidia.md:179-213` | 9-11 | Verify speedup numbers, 500-hour dataset claims, and setup wording |
+| Seen-task and unseen-task results | `sources/doc2x/DreamZero-Nvidia.md:271-283` | 13-14 | Verify main quantitative comparison claims |
+| Cross-embodiment transfer | `sources/doc2x/DreamZero-Nvidia.md:315-317` | 15-16 | Verify transfer gains and task-progress numbers |
+
+## Recommended Verification Workflow
+
+1. Start from `docs/reference/source-verification.md`.
+2. Read the checkpoint row for the section you plan to edit.
+3. Use `DreamZero-Nvidia.pdf` as the final authority.
+4. Use `sources/doc2x/DreamZero-Nvidia.md` for equation-friendly working text.
+5. Record any newly discovered ambiguities before propagating corrected wording into lecture or report pages.
 
 ## Recommended Workflow
 

@@ -1,1 +1,7 @@
-No symbols found.
+Memo-dec Symbols (ultra compact - 100 per line):
+--------------------------------------------------------------------------------
+Total symbols: 38
+
+mkdocs.yml
+1:key:site_name 2:key:site_description 3:key:site_author 4:key:docs_dir 5:key:site_dir 6:key:strict 8:key:theme 9:key:name 10:key:features 19:key:plugins 22:key:markdown_extensions 27:key:toc 28:key:permalink 29:key:pymdownx.arithmatex 30:key:generic 35:key:pymdownx.tabbed 36:key:alternate_style 38:key:extra_javascript 43:key:extra_css 47:key:nav 48:key:Home 49:key:Lecture 50:key:Course Map 51:key:Routed Intake 52:key:Math and Robotics Primer 53:key:Why VLAs Hit a Wall 54:key:Logic Root of DreamZero 55:key:Core Equations 56:key:System and Inference 57:key:Transfer and Generalization 58:key:Polanyi Lens 59:key:Report 60:key:Standard Reference 61:key:Reference 62:key:Glossary 63:key:Formula Sheet 64:key:Source Verification 65:key:Source Map
+
