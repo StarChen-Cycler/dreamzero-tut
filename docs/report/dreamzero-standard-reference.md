@@ -2,6 +2,12 @@
 
 This report is the compact synthesis layer of the project.
 
+!!! warning "Stable Reference, Not Final Authority"
+
+    This page is the stable synthesis layer for the project.
+    It is not the canonical source.
+    For checked wording, equations, and claim anchors, use [Source Verification](../reference/source-verification.md) and `DreamZero-Nvidia.pdf`.
+
 ## One-Sentence Thesis
 
 DreamZero argues that robot policies generalize better when action prediction is coupled to a pretrained video-based model of future world evolution rather than learned primarily as direct action imitation on top of static semantic priors.
@@ -19,6 +25,16 @@ $$
 So the paper asks a more structural question:
 
 > What if the policy learns action through aligned future-world prediction instead of action-only imitation?
+
+## Root Cause
+
+The root cause used by this project is consistent across the lecture and report:
+
+$$
+\text{strong semantic prior} \neq \text{sufficient physical dynamics prior}
+$$
+
+In plain language, the earlier generation of models can know what a task means without knowing how a new motion should unfold in space and time.
 
 ## Root Cause Diagnosis
 
@@ -45,6 +61,8 @@ $$
 \Rightarrow
 \text{make it fast enough for closed-loop execution}
 $$
+
+This report uses `logic root` as the minimal premise chain that makes DreamZero's design rational.
 
 ## Architecture In Plain Language
 
@@ -104,15 +122,32 @@ This appears in two ways:
 - video-only data from other humans or robots helps
 - a new robot can be adapted with little additional play data
 
+!!! note "Evidence-Limit Caution"
+
+    These results are best read as evidence of a promising transfer mechanism, not as proof that DreamZero is generally embodiment-agnostic.
+    The reported gains still depend on the paper's specific robots, tasks, and data mixtures.
+
 ## Limits And Open Questions
 
 - How much of the gain is from video pretraining scale versus architecture?
 - How robust is the result outside the reported task families?
 - What breaks when visual prediction looks plausible but contact dynamics are wrong?
 - How much embodiment-specific information remains hidden in the action decoder?
+- How much of the reported transfer gain depends on embodiment similarity rather than a fully general world-action representation?
+- What would happen if the sensing stack or action space changed more radically than in the paper's tested setups?
 
 ## How To Use This Report
 
 - Use the lecture chapters to teach the system.
 - Use this report as the stable reference layer.
 - Use the source map to trace claims back to the extracted paper.
+
+## Context Entrypoints
+
+If a future session needs to recover project intent quickly, start with:
+
+1. `.memo/memodocs/user_spec_dream-zero-guide.md`
+2. `.memo/memodocs/tech_spec_dream-zero-guide.md`
+3. `CLAUDE.md`
+4. `docs/reference/source-verification.md`
+5. `docs/reference/source-map.md`

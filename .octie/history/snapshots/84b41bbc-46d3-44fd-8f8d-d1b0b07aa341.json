@@ -6,7 +6,7 @@
     "project_name": "dream-zero-guide",
     "version": "1.0.0",
     "created_at": "2026-04-07T07:37:58.061Z",
-    "updated_at": "2026-04-07T08:48:57.689Z"
+    "updated_at": "2026-04-07T08:48:12.577Z"
   },
   "tasks": {
     "3951f335-5b54-460d-a59b-22604a347f2f": {
@@ -229,7 +229,7 @@
       "id": "cd0343a6-de59-423e-9ff8-8fc8b5370385",
       "title": "Write transfer and reference synthesis for DreamZero",
       "description": "Refine the transfer, Polanyi, report, and source-map materials so the final reference narrative is consistent with the refined lecture chapters, explicit about evidence limits, and reusable by later contributors as the stable synthesis layer.",
-      "status": "completed",
+      "status": "in_review",
       "priority": "second",
       "success_criteria": [
         {
@@ -293,7 +293,7 @@
       "notes": "Context entrypoint for new sessions: review .memo/memodocs/user_spec_dream-zero-guide.md, .memo/memodocs/tech_spec_dream-zero-guide.md, and CLAUDE.md first, then read docs/index.md and the completed source verification note before touching the stable reference layer.\n\nThis task should inherit terminology and pedagogy conventions from the refined foundation and equations tasks rather than inventing new framing in isolation.\n\nUse the Polanyi lens to expose tacit judgment, but keep it disciplined and tied back to source claims and the report's evidence boundaries.\n\nRefined transfer and Polanyi chapters with explicit evidence-boundary language, updated the standard reference to restate root cause, logic root, and context entrypoints consistently, and expanded source-map.md with cross-session recovery entrypoints and synthesis rules. Verified rendering with .venv\\\\Scripts\\\\python -m mkdocs build.",
       "c7_verified": [],
       "created_at": "2026-04-07T07:58:26.340Z",
-      "updated_at": "2026-04-07T08:48:57.688Z",
+      "updated_at": "2026-04-07T08:48:12.577Z",
       "completed_at": "2026-04-07T08:48:12.577Z",
       "edges": [
         "c27d4d76-ca06-43ba-b361-7b625c3f8e42"
@@ -303,7 +303,7 @@
       "id": "c27d4d76-ca06-43ba-b361-7b625c3f8e42",
       "title": "Write docs QA and context handoff checklist",
       "description": "Perform a final documentation QA pass after chapter refinement, verify the MkDocs build and navigation, and ensure contributor handoff points clearly direct future sessions to the init-created context files and the source verification note.",
-      "status": "ready",
+      "status": "blocked",
       "priority": "second",
       "success_criteria": [
         {
@@ -391,18 +391,19 @@
   ],
   "indexes": {
     "byStatus": {
-      "ready": [
-        "c27d4d76-ca06-43ba-b361-7b625c3f8e42"
-      ],
+      "ready": [],
       "in_progress": [],
-      "in_review": [],
+      "in_review": [
+        "cd0343a6-de59-423e-9ff8-8fc8b5370385"
+      ],
       "completed": [
         "3951f335-5b54-460d-a59b-22604a347f2f",
         "879265ec-b906-4cca-9948-e5bf5c8a2c62",
-        "395e913e-4e84-4d65-a853-3108d7f6fcca",
-        "cd0343a6-de59-423e-9ff8-8fc8b5370385"
+        "395e913e-4e84-4d65-a853-3108d7f6fcca"
       ],
-      "blocked": []
+      "blocked": [
+        "c27d4d76-ca06-43ba-b361-7b625c3f8e42"
+      ]
     },
     "byPriority": {
       "top": [

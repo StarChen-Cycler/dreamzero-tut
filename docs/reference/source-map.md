@@ -7,6 +7,16 @@
 - `sources/doc2x/images/`
 - `docs/reference/source-verification.md`
 
+## Context Entrypoints
+
+If the current session is gone and a new contributor needs to recover intent quickly, read these first:
+
+1. `.memo/memodocs/user_spec_dream-zero-guide.md`
+2. `.memo/memodocs/tech_spec_dream-zero-guide.md`
+3. `CLAUDE.md`
+4. `docs/reference/source-verification.md`
+5. `docs/report/dreamzero-standard-reference.md`
+
 ## Planning Constraints
 
 - `system-development-principles-canonical.md`
@@ -43,6 +53,15 @@
 3. Use `DreamZero-Nvidia.pdf` as the final authority.
 4. Use `sources/doc2x/DreamZero-Nvidia.md` for equation-friendly working text.
 5. Record any newly discovered ambiguities before propagating corrected wording into lecture or report pages.
+
+## Synthesis Rule
+
+When moving from lecture chapters to the standard reference:
+
+- preserve the verified root cause
+- preserve the verified logic root
+- keep evidence limits visible
+- keep the context entrypoints above intact for future sessions
 
 ## Recommended Workflow
 
