@@ -4,9 +4,21 @@
 
 A motor command sent to the robot.
 
+## Observation
+
+What the robot senses from the world, typically camera views plus internal state.
+
+## Policy
+
+A rule or model that maps available context to actions.
+
 ## Closed-Loop Control
 
 A control pattern where each new action depends on fresh observations from the environment.
+
+## Diffusion Model
+
+A generative model trained to reverse a noise process and recover structured data from noisy inputs.
 
 ## Embodiment
 
@@ -31,6 +43,10 @@ Vision-Language-Action model. A model that uses visual and language context to p
 ## VLM
 
 Vision-Language Model. A model trained on image-text style tasks, usually strong at semantics.
+
+## World Model
+
+A model that predicts how the world state or observations will evolve over time.
 
 ## WAM
 

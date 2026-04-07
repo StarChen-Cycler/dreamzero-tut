@@ -2,9 +2,15 @@
 
 DreamZero starts from a diagnosis, not from architecture worship.
 
+!!! note "Source Versus Teaching Compression"
+
+    The diagnosis on this page is faithful to the paper's argument, but the compact equation below is a teaching device.
+    For checked wording about DreamZero, [VLAs](../reference/glossary.md#vla), and the main claim numbers,
+    use [Source Verification](../reference/source-verification.md).
+
 ## Core Diagnosis
 
-The paper's claim is that standard VLAs inherit strong semantic priors but weak physical priors.
+The paper's claim is that standard [VLAs](../reference/glossary.md#vla) inherit strong semantic priors but weak physical priors.
 
 In plain language:
 
@@ -30,6 +36,8 @@ Static image-text pretraining does not directly teach:
 - contact dynamics
 - motion geometry
 - control-sensitive visual change
+
+That is why a strong [VLM](../reference/glossary.md#vlm) does not automatically become a strong robot [policy](../reference/glossary.md#policy).
 
 ## Teaching Equation
 
@@ -61,7 +69,7 @@ $$
 \text{video pretraining} \Rightarrow \text{spatiotemporal prior} \Rightarrow \text{better physical anticipation}
 $$
 
-That is the beginning of the logic root.
+That is the beginning of the logic root and the motivation for moving toward a [WAM](../reference/glossary.md#wam) rather than a purely action-imitation stack.
 
 ## Tacit Bridge
 

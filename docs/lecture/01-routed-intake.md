@@ -2,6 +2,16 @@
 
 This page applies `question-problem-routing-system-v3.md` to the project request itself.
 
+!!! note "Pedagogical Framing, Not Paper Structure"
+
+    This page is not a literal section of the DreamZero paper.
+    It is a project-level routing layer derived from
+    `question-problem-routing-system-v3.md` and constrained by
+    [Source Verification](../reference/source-verification.md).
+    Its job is to keep later explanation of the robot [policy](../reference/glossary.md#policy),
+    [World Action Model](../reference/glossary.md#wam), and [embodiment](../reference/glossary.md#embodiment)
+    logically bounded before teaching details.
+
 ## Routed Intake
 
 - Input shape: Problem
@@ -46,6 +56,7 @@ The guide must keep these fields explicit:
 - which equations are exact from the paper
 - which explanations are pedagogical simplifications
 - where tacit judgment enters interpretation
+- which robotics terms must be grounded through the [glossary](../reference/glossary.md)
 
 ## Logic Root And Root Cause
 
@@ -63,3 +74,8 @@ $$
 $$
 
 This scaffold is the first completion of that loop.
+
+## Source-Literal Anchor
+
+The routing layer should hand later chapters to the verified source, not replace it.
+For DreamZero-specific wording, use [Source Verification](../reference/source-verification.md).

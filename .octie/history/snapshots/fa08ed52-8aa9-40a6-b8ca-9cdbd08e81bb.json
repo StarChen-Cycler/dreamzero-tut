@@ -6,7 +6,7 @@
     "project_name": "dream-zero-guide",
     "version": "1.0.0",
     "created_at": "2026-04-07T07:37:58.061Z",
-    "updated_at": "2026-04-07T08:38:54.234Z"
+    "updated_at": "2026-04-07T08:38:17.861Z"
   },
   "tasks": {
     "3951f335-5b54-460d-a59b-22604a347f2f": {
@@ -79,7 +79,7 @@
       "id": "879265ec-b906-4cca-9948-e5bf5c8a2c62",
       "title": "Refine lecture foundation chapters for non-roboticist readers",
       "description": "Strengthen the course map, routed intake, prerequisite, VLA diagnosis, and logic-root chapters so the opening lecture path is source-aware, accessible to math-literate readers, and explicit about pedagogical versus source-literal claims.",
-      "status": "completed",
+      "status": "in_review",
       "priority": "top",
       "success_criteria": [
         {
@@ -149,7 +149,7 @@
       "notes": "Context entrypoint for new sessions: start with .memo/memodocs/user_spec_dream-zero-guide.md, .memo/memodocs/tech_spec_dream-zero-guide.md, and CLAUDE.md, then reread docs/index.md before editing lecture chapters.\n\nThis task depends on the source verification note so chapter cleanup does not drift from OCR-corrupted text or unverified equations.\n\nKeep the system-development-principles-canonical.md and question-problem-routing-system-v3.md files in scope when deciding how much background and clarification to add.\n\nRevised lecture chapters 00-04 to add explicit source-boundary admonitions, grounded the early teaching path in docs/reference/source-verification.md, and added glossary-linked robotics/modeling vocabulary. Also extended docs/reference/glossary.md with observation, policy, diffusion model, and world model entries. Verified rendering with .venv\\\\Scripts\\\\python -m mkdocs build.",
       "c7_verified": [],
       "created_at": "2026-04-07T07:55:19.224Z",
-      "updated_at": "2026-04-07T08:38:54.234Z",
+      "updated_at": "2026-04-07T08:38:17.861Z",
       "completed_at": "2026-04-07T08:38:17.861Z",
       "edges": [
         "cd0343a6-de59-423e-9ff8-8fc8b5370385"
@@ -389,10 +389,11 @@
         "395e913e-4e84-4d65-a853-3108d7f6fcca"
       ],
       "in_progress": [],
-      "in_review": [],
-      "completed": [
-        "3951f335-5b54-460d-a59b-22604a347f2f",
+      "in_review": [
         "879265ec-b906-4cca-9948-e5bf5c8a2c62"
+      ],
+      "completed": [
+        "3951f335-5b54-460d-a59b-22604a347f2f"
       ],
       "blocked": [
         "cd0343a6-de59-423e-9ff8-8fc8b5370385",

@@ -2,6 +2,14 @@
 
 This chapter rebuilds DreamZero from constraints.
 
+!!! note "Reconstruction Layer"
+
+    `Logic root` is our explanatory term, not the paper's own section title.
+    It is a disciplined reconstruction of the paper's argument from verified claims in
+    [Source Verification](../reference/source-verification.md).
+    Treat the causal chain below as a teaching map for the robot [policy](../reference/glossary.md#policy),
+    not as a direct quotation from the paper.
+
 ## Step 1: Name The Real Need
 
 The target is not just task imitation.
@@ -12,6 +20,7 @@ $$
 $$
 
 That means the robot should perform useful new behavior in new environments without collecting full new demonstration sets.
+This is where [embodiment](../reference/glossary.md#embodiment) and [closed-loop control](../reference/glossary.md#closed-loop-control) start to matter, because generalization is about real execution, not only instruction matching.
 
 ## Step 2: Ask What Prior Could Support That
 
@@ -44,6 +53,7 @@ $$
 $$
 
 This is the move from VLA-style action prediction toward a World Action Model.
+In glossary terms, the design is moving from a [VLA](../reference/glossary.md#vla) framing toward a [WAM](../reference/glossary.md#wam) framing.
 
 ## Step 5: Ask What Blocks Real Deployment
 
@@ -59,7 +69,7 @@ DreamZero answers this with:
 
 - joint video-action denoising
 - autoregressive generation
-- KV-cache reuse
+- [KV-cache](../reference/glossary.md#kv-cache) reuse
 - system and kernel optimization
 
 ## Logic Root Summary
