@@ -33,3 +33,13 @@ mkdocs serve
 - Keep the extracted paper in `sources/doc2x/` unchanged.
 - Put interpretation, cleanup, pedagogy, and simplification only in `docs/`.
 - When OCR text is suspicious, verify against `DreamZero-Nvidia.pdf`.
+
+## Context Entrypoints
+
+If a future session needs to recover project intent quickly, read these first:
+
+1. `.memo/memodocs/user_spec_dream-zero-guide.md`
+2. `.memo/memodocs/tech_spec_dream-zero-guide.md`
+3. `CLAUDE.md`
+4. `docs/reference/source-verification.md`
+5. `docs/reference/source-map.md`

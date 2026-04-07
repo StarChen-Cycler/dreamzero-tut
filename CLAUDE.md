@@ -21,6 +21,15 @@ Primary tasks:
 - keep formulas and claims aligned with the source PDF
 - avoid collapsing deconstruction into shallow summary
 
+## Context Entrypoints
+
+If a future session needs to reload context quickly, read:
+
+1. `.memo/memodocs/user_spec_dream-zero-guide.md`
+2. `.memo/memodocs/tech_spec_dream-zero-guide.md`
+3. `docs/reference/source-verification.md`
+4. `docs/reference/source-map.md`
+
 ## Working Rule
 
 When editing content, preserve:

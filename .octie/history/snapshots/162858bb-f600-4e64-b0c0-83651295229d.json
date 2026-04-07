@@ -6,7 +6,7 @@
     "project_name": "dream-zero-guide",
     "version": "1.0.0",
     "created_at": "2026-04-07T07:37:58.061Z",
-    "updated_at": "2026-04-07T08:53:33.823Z"
+    "updated_at": "2026-04-07T08:52:55.084Z"
   },
   "tasks": {
     "3951f335-5b54-460d-a59b-22604a347f2f": {
@@ -303,7 +303,7 @@
       "id": "c27d4d76-ca06-43ba-b361-7b625c3f8e42",
       "title": "Write docs QA and context handoff checklist",
       "description": "Perform a final documentation QA pass after chapter refinement, verify the MkDocs build and navigation, and ensure contributor handoff points clearly direct future sessions to the init-created context files and the source verification note.",
-      "status": "completed",
+      "status": "in_review",
       "priority": "second",
       "success_criteria": [
         {
@@ -360,7 +360,7 @@
       "notes": "Context entrypoint for new sessions: the first files to read are .memo/memodocs/user_spec_dream-zero-guide.md, .memo/memodocs/tech_spec_dream-zero-guide.md, CLAUDE.md, and docs/reference/source-verification.md once it exists.\n\nThis task exists specifically to protect context continuity if the current session is compacted or closed; preserve those file references in final handoff docs and in Octie metadata.\n\nUse octie find --search or octie find --has-file to confirm that the key context files are discoverable from the task graph.\n\nFinal QA pass completed. README.md and CLAUDE.md now point future sessions to .memo/memodocs/user_spec_dream-zero-guide.md, .memo/memodocs/tech_spec_dream-zero-guide.md, docs/reference/source-verification.md, and docs/reference/source-map.md. Verified the site with .venv\\\\Scripts\\\\python -m mkdocs build and confirmed Octie discoverability using octie find --search on both .memo/memodocs/user_spec_dream-zero-guide.md and CLAUDE.md.",
       "c7_verified": [],
       "created_at": "2026-04-07T07:59:26.313Z",
-      "updated_at": "2026-04-07T08:53:33.823Z",
+      "updated_at": "2026-04-07T08:52:55.084Z",
       "completed_at": "2026-04-07T08:52:55.084Z",
       "edges": []
     }
@@ -396,13 +396,14 @@
     "byStatus": {
       "ready": [],
       "in_progress": [],
-      "in_review": [],
+      "in_review": [
+        "c27d4d76-ca06-43ba-b361-7b625c3f8e42"
+      ],
       "completed": [
         "3951f335-5b54-460d-a59b-22604a347f2f",
         "879265ec-b906-4cca-9948-e5bf5c8a2c62",
         "395e913e-4e84-4d65-a853-3108d7f6fcca",
-        "cd0343a6-de59-423e-9ff8-8fc8b5370385",
-        "c27d4d76-ca06-43ba-b361-7b625c3f8e42"
+        "cd0343a6-de59-423e-9ff8-8fc8b5370385"
       ],
       "blocked": []
     },
