@@ -92,6 +92,19 @@ $$
 \pi_0(\mathbf{o}_{l:l+H}, \mathbf{a}_{l:l+H} \mid \mathbf{o}_{0:l}, \mathbf{c}, \mathbf{q}_l)
 $$
 
+Symbol legend:
+
+- $\pi_0$: DreamZero policy/model distribution
+- $\mathbf{o}$: observation sequence
+- $\mathbf{a}$: action sequence
+- $\mathbf{c}$: language instruction
+- $\mathbf{q}_l$: proprioceptive state at anchor time $l$
+- $l:l+H$: future slice from anchor time $l$ across horizon $H$
+- $\mid$: \"given\"
+
+Full notation reference:
+[Notation Guide](../reference/notation-guide.md#symbol-table).
+
 and trains the model with a flow-matching style denoising objective over both modalities.
 
 The simplest interpretation is:
@@ -99,6 +112,10 @@ The simplest interpretation is:
 $$
 \text{learn to recover coherent future video and action together from noise}
 $$
+
+Range-notation reminder:
+the report uses compressed wording, but the source equations distinguish history slices like $\mathbf{o}_{0:l}$ from future slices like $\mathbf{o}_{l:l+H}$.
+That distinction is one of the main structural ideas in the paper.
 
 ## Why Real-Time Matters
 

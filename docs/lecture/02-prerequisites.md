@@ -25,6 +25,17 @@ This page defines only the background needed to follow the later chapters.
 - [WAM](../reference/glossary.md#wam): a world action model, here meaning a model that predicts future observations and actions jointly
 - [diffusion model](../reference/glossary.md#diffusion-model): a model trained to reverse a noise process
 
+## How To Read The Notation
+
+Before the equation-heavy chapters, keep four notation habits active:
+
+1. bold symbols like $\mathbf{o}$ or $\mathbf{a}$ usually mean vectors, structured states, or sequences rather than single scalar numbers
+2. a range like $l:l+H$ means \"from time $l$ through time $l+H$\"
+3. a superscript like the `$k$` in $\mathbf{z}_{t_k}^{k}$ marks a chunk identity, not exponentiation
+4. a conditioning bar $\mid$ means \"given\"
+
+If those patterns stop being obvious while you read, use [Notation Guide](../reference/notation-guide.md).
+
 ## Why Semantics Alone Is Not Enough
 
 A robot task needs at least two kinds of competence:
@@ -37,6 +48,8 @@ This is not a formal theorem. It is a teaching approximation.
 
 VLAs inherit strong semantics from web-scale vision-language pretraining, but DreamZero argues that they are still weak on physical execution in unseen situations.
 That contrast sets up why a [world model](../reference/glossary.md#world-model) or [WAM](../reference/glossary.md#wam)-style framing matters later.
+
+When you reach the core DreamZero formulas, the [Notation Guide](../reference/notation-guide.md#notation-patterns) is the reference page for subscripts, chunk indices, and operator symbols.
 
 ## What To Watch For
 

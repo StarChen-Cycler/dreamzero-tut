@@ -21,6 +21,11 @@ In plain language, the robot only stays relevant if its next decision arrives be
 
 If inference is too slow, the policy becomes physically irrelevant.
 
+Notation cue:
+
+- the arrows are workflow arrows, not stochastic operators
+- they are shorthand for temporal order in [closed-loop control](../reference/glossary.md#closed-loop-control)
+
 ## Why Autoregressive Generation Helps
 
 The paper argues that autoregressive generation offers three benefits:
@@ -71,17 +76,33 @@ $$
 
 In plain language, the paper claims DreamZero moved from unusably slow single-GPU execution to a latency regime compatible with asynchronous closed-loop control.
 
+Notation cue:
+
+- `ms` means milliseconds
+- `s` means seconds
+- the arrow means a before/after latency comparison, not a learned function
+
 $$
 48 \text{ action steps at } 30 \text{ Hz} \approx 1.6 \text{ s per chunk}
 $$
 
 In plain language, the controller can overlap inference with execution because each action chunk lasts much longer than the final optimized inference latency.
 
+Range-notation reminder:
+
+This page uses timing notation instead of sequence ranges like $l:l+H$.
+If you need to reconnect the timing story to the sequence notation in Equations (1)-(3), use [Notation Guide](../reference/notation-guide.md#notation-patterns).
+
 $$
 38\times \text{ cumulative speedup on GB200}
 $$
 
 In plain language, the paper's deployment story depends on both algorithmic and systems optimization, not on architecture alone.
+
+Notation cue:
+
+- $\times$ means multiplicative speedup
+- $38\times$ means the optimized system is reported to be 38 times faster than the specified baseline setup
 
 ## Tacit Bridge
 

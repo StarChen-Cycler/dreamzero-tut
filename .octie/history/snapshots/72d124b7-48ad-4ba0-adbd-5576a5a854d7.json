@@ -6,7 +6,7 @@
     "project_name": "dream-zero-guide",
     "version": "1.0.0",
     "created_at": "2026-04-07T07:37:58.061Z",
-    "updated_at": "2026-04-08T05:07:32.717Z"
+    "updated_at": "2026-04-08T05:04:30.654Z"
   },
   "tasks": {
     "3951f335-5b54-460d-a59b-22604a347f2f": {
@@ -441,48 +441,45 @@
       "id": "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a",
       "title": "Integrate symbol explanations into DreamZero tutorial materials",
       "description": "Update the equation-heavy tutorial pages so readers do not have to bounce between formulas and guess what the notation means. Add nearby symbol legends, notation-reading cues, and explicit references to the notation guide across the lecture and stable reference layers.",
-      "status": "completed",
+      "status": "ready",
       "priority": "second",
       "success_criteria": [
         {
           "id": "9507ffd9-2797-4722-a274-c5d2f5518276",
           "text": "Update at least 4 material pages so every displayed paper-derived formula has either a nearby symbol legend or a direct notation-guide pointer.",
-          "completed": true,
-          "completed_at": "2026-04-08T05:07:10.200Z"
+          "completed": false
         },
         {
           "id": "c9ba6467-1690-4fef-bbb9-d995eb1f0dd5",
           "text": "Add at least 1 explicit explanation of index or range notation to each revised tutorial page that contains paper-derived formulas.",
-          "completed": true,
-          "completed_at": "2026-04-08T05:07:10.200Z"
+          "completed": false
         },
         {
           "id": "95447895-a83c-4374-b5f0-fd90c75463f9",
           "text": "Run mkdocs build successfully after the tutorial integration changes with 0 build errors.",
-          "completed": true,
-          "completed_at": "2026-04-08T05:07:10.200Z"
+          "completed": false
         }
       ],
       "deliverables": [
         {
           "id": "a9555891-ecbf-462d-9ec2-279b07354c85",
           "text": "Updated docs/lecture/05-core-equations.md",
-          "completed": true
+          "completed": false
         },
         {
           "id": "e4b55db6-67d9-4b66-967c-20275995c0c8",
           "text": "Updated docs/lecture/06-system-and-inference.md",
-          "completed": true
+          "completed": false
         },
         {
           "id": "4abf275b-e382-4831-b1ca-67d2d1d26453",
           "text": "Updated docs/lecture/02-prerequisites.md or docs/report/dreamzero-standard-reference.md",
-          "completed": true
+          "completed": false
         },
         {
           "id": "a473f8e9-9725-4577-b7ab-b820a80e4a65",
           "text": "Cross-links from tutorial pages to docs/reference/notation-guide.md",
-          "completed": true
+          "completed": false
         }
       ],
       "need_fix": [],
@@ -503,11 +500,11 @@
         ".memo/memodocs/tech_spec_dream-zero-guide.md",
         "CLAUDE.md"
       ],
-      "notes": "Context entrypoint for new sessions: start with .memo/memodocs/user_spec_dream-zero-guide.md, .memo/memodocs/tech_spec_dream-zero-guide.md, CLAUDE.md, docs/reference/source-verification.md, and the completed notation guide task before revising tutorial prose.\n\nThis task should consume the notation guide from c4027804 instead of inventing inconsistent symbol explanations in each page.\n\nKeep the project's accessibility goal visible: the user specifically asked for deeper explanation of what each symbol stands for, not just more high-level summary.\n\nIntegrated notation help into tutorial materials by adding notation-reading guidance to docs/lecture/02-prerequisites.md, local symbol legends and range-notation reminders to docs/lecture/05-core-equations.md, timing-notation cues plus a bridge back to sequence notation in docs/lecture/06-system-and-inference.md, and a compact symbol legend in docs/report/dreamzero-standard-reference.md. Verified rendering with .venv\\\\Scripts\\\\python -m mkdocs build.",
+      "notes": "Context entrypoint for new sessions: start with .memo/memodocs/user_spec_dream-zero-guide.md, .memo/memodocs/tech_spec_dream-zero-guide.md, CLAUDE.md, docs/reference/source-verification.md, and the completed notation guide task before revising tutorial prose.\n\nThis task should consume the notation guide from c4027804 instead of inventing inconsistent symbol explanations in each page.\n\nKeep the project's accessibility goal visible: the user specifically asked for deeper explanation of what each symbol stands for, not just more high-level summary.",
       "c7_verified": [],
       "created_at": "2026-04-08T03:48:10.707Z",
-      "updated_at": "2026-04-08T05:07:32.717Z",
-      "completed_at": "2026-04-08T05:07:10.200Z",
+      "updated_at": "2026-04-08T03:48:10.707Z",
+      "completed_at": null,
       "edges": []
     }
   },
@@ -545,7 +542,9 @@
   ],
   "indexes": {
     "byStatus": {
-      "ready": [],
+      "ready": [
+        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+      ],
       "in_progress": [],
       "in_review": [],
       "completed": [
@@ -554,8 +553,7 @@
         "395e913e-4e84-4d65-a853-3108d7f6fcca",
         "cd0343a6-de59-423e-9ff8-8fc8b5370385",
         "c27d4d76-ca06-43ba-b361-7b625c3f8e42",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
       ],
       "blocked": []
     },
@@ -694,8 +692,7 @@
       "a": [
         "3951f335-5b54-460d-a59b-22604a347f2f",
         "c27d4d76-ca06-43ba-b361-7b625c3f8e42",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
       ],
       "that": [
         "3951f335-5b54-460d-a59b-22604a347f2f",
@@ -716,8 +713,7 @@
       ],
       "report": [
         "3951f335-5b54-460d-a59b-22604a347f2f",
-        "cd0343a6-de59-423e-9ff8-8fc8b5370385",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "cd0343a6-de59-423e-9ff8-8fc8b5370385"
       ],
       "tasks": [
         "3951f335-5b54-460d-a59b-22604a347f2f",
@@ -901,8 +897,7 @@
       "system": [
         "3951f335-5b54-460d-a59b-22604a347f2f",
         "879265ec-b906-4cca-9948-e5bf5c8a2c62",
-        "395e913e-4e84-4d65-a853-3108d7f6fcca",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "395e913e-4e84-4d65-a853-3108d7f6fcca"
       ],
       "development": [
         "3951f335-5b54-460d-a59b-22604a347f2f",
@@ -1018,8 +1013,7 @@
         "395e913e-4e84-4d65-a853-3108d7f6fcca",
         "cd0343a6-de59-423e-9ff8-8fc8b5370385",
         "c27d4d76-ca06-43ba-b361-7b625c3f8e42",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
       ],
       "docs": [
         "3951f335-5b54-460d-a59b-22604a347f2f",
@@ -1067,8 +1061,7 @@
         "395e913e-4e84-4d65-a853-3108d7f6fcca",
         "cd0343a6-de59-423e-9ff8-8fc8b5370385",
         "c27d4d76-ca06-43ba-b361-7b625c3f8e42",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
       ],
       "yml": [
         "3951f335-5b54-460d-a59b-22604a347f2f",
@@ -1085,8 +1078,7 @@
         "395e913e-4e84-4d65-a853-3108d7f6fcca",
         "cd0343a6-de59-423e-9ff8-8fc8b5370385",
         "c27d4d76-ca06-43ba-b361-7b625c3f8e42",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
       ],
       "with": [
         "3951f335-5b54-460d-a59b-22604a347f2f",
@@ -1103,8 +1095,7 @@
         "395e913e-4e84-4d65-a853-3108d7f6fcca",
         "cd0343a6-de59-423e-9ff8-8fc8b5370385",
         "c27d4d76-ca06-43ba-b361-7b625c3f8e42",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
       ],
       "scripts": [
         "3951f335-5b54-460d-a59b-22604a347f2f",
@@ -1112,8 +1103,7 @@
         "395e913e-4e84-4d65-a853-3108d7f6fcca",
         "cd0343a6-de59-423e-9ff8-8fc8b5370385",
         "c27d4d76-ca06-43ba-b361-7b625c3f8e42",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
       ],
       "python": [
         "3951f335-5b54-460d-a59b-22604a347f2f",
@@ -1121,8 +1111,7 @@
         "395e913e-4e84-4d65-a853-3108d7f6fcca",
         "cd0343a6-de59-423e-9ff8-8fc8b5370385",
         "c27d4d76-ca06-43ba-b361-7b625c3f8e42",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
       ],
       "m": [
         "3951f335-5b54-460d-a59b-22604a347f2f",
@@ -1130,8 +1119,7 @@
         "395e913e-4e84-4d65-a853-3108d7f6fcca",
         "cd0343a6-de59-423e-9ff8-8fc8b5370385",
         "c27d4d76-ca06-43ba-b361-7b625c3f8e42",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
       ],
       "method": [
         "3951f335-5b54-460d-a59b-22604a347f2f"
@@ -1352,8 +1340,7 @@
         "879265ec-b906-4cca-9948-e5bf5c8a2c62",
         "395e913e-4e84-4d65-a853-3108d7f6fcca",
         "cd0343a6-de59-423e-9ff8-8fc8b5370385",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
       ],
       "keep": [
         "879265ec-b906-4cca-9948-e5bf5c8a2c62",
@@ -1456,8 +1443,7 @@
         "879265ec-b906-4cca-9948-e5bf5c8a2c62",
         "395e913e-4e84-4d65-a853-3108d7f6fcca",
         "cd0343a6-de59-423e-9ff8-8fc8b5370385",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
       ],
       "verify": [
         "395e913e-4e84-4d65-a853-3108d7f6fcca",
@@ -1468,8 +1454,7 @@
       ],
       "core": [
         "395e913e-4e84-4d65-a853-3108d7f6fcca",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
       ],
       "systems": [
         "395e913e-4e84-4d65-a853-3108d7f6fcca"
@@ -1589,16 +1574,13 @@
         "cd0343a6-de59-423e-9ff8-8fc8b5370385"
       ],
       "05": [
-        "395e913e-4e84-4d65-a853-3108d7f6fcca",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "395e913e-4e84-4d65-a853-3108d7f6fcca"
       ],
       "06": [
-        "395e913e-4e84-4d65-a853-3108d7f6fcca",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "395e913e-4e84-4d65-a853-3108d7f6fcca"
       ],
       "inference": [
-        "395e913e-4e84-4d65-a853-3108d7f6fcca",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "395e913e-4e84-4d65-a853-3108d7f6fcca"
       ],
       "distinguish": [
         "395e913e-4e84-4d65-a853-3108d7f6fcca"
@@ -1666,8 +1648,7 @@
       ],
       "by": [
         "cd0343a6-de59-423e-9ff8-8fc8b5370385",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
       ],
       "contributors": [
         "cd0343a6-de59-423e-9ff8-8fc8b5370385"
@@ -1757,8 +1738,7 @@
         "cd0343a6-de59-423e-9ff8-8fc8b5370385"
       ],
       "back": [
-        "cd0343a6-de59-423e-9ff8-8fc8b5370385",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "cd0343a6-de59-423e-9ff8-8fc8b5370385"
       ],
       "s": [
         "cd0343a6-de59-423e-9ff8-8fc8b5370385",
@@ -1769,8 +1749,7 @@
         "cd0343a6-de59-423e-9ff8-8fc8b5370385"
       ],
       "standard": [
-        "cd0343a6-de59-423e-9ff8-8fc8b5370385",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "cd0343a6-de59-423e-9ff8-8fc8b5370385"
       ],
       "restate": [
         "cd0343a6-de59-423e-9ff8-8fc8b5370385"
@@ -2015,8 +1994,7 @@
         "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
       ],
       "guidance": [
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
       ],
       "could": [
         "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
@@ -2190,48 +2168,6 @@
         "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
       ],
       "summary": [
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
-      ],
-      "integrated": [
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
-      ],
-      "help": [
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
-      ],
-      "adding": [
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
-      ],
-      "02": [
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
-      ],
-      "prerequisites": [
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
-      ],
-      "local": [
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
-      ],
-      "range": [
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
-      ],
-      "reminders": [
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
-      ],
-      "timing": [
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
-      ],
-      "plus": [
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
-      ],
-      "bridge": [
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
-      ],
-      "sequence": [
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
-      ],
-      "compact": [
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
-      ],
-      "legend": [
         "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
       ]
     },

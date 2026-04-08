@@ -22,6 +22,17 @@ $$
 
 In plain language, the policy is being described as "future world prediction plus action extraction conditioned on that future."
 
+Symbol legend:
+
+- $\pi_0$: the DreamZero policy or model distribution
+- $\mathbf{o}$: observation sequence
+- $\mathbf{a}$: action sequence
+- $\mathbf{c}$: language instruction
+- $\mathbf{q}_l$: proprioceptive state at anchor time $l$
+- $l:l+H$: the future range starting at $l$ and extending across horizon $H$
+
+If you need the full symbol table, use [Notation Guide](../reference/notation-guide.md#symbol-table).
+
 Interpretation:
 
 - the model predicts future observations
@@ -51,6 +62,18 @@ $$
 
 This says the noisy action is constructed in the same way, so video and action are corrupted under a parallel schedule.
 
+Symbol legend:
+
+- $\mathbf{z}$: video latent representation
+- $\mathbf{a}$: action representation
+- subscript `0`: Gaussian-noise endpoint
+- subscript `1`: clean endpoint
+- superscript `$k$`: the $k$-th chunk
+- $t_k$: denoising timestep for chunk $k$
+
+The chunk superscript does not mean exponentiation.
+See [Notation Guide](../reference/notation-guide.md#notation-patterns).
+
 Read this as:
 
 - start with clean targets
@@ -74,6 +97,18 @@ $$
 
 In plain language, this loss penalizes the model when its predicted denoising direction differs from the target direction that points from noise toward the clean video-action pair.
 
+Symbol legend:
+
+- $\mathcal{L}(\theta)$: training loss as a function of parameters $\theta$
+- $\mathbb{E}$: expectation, meaning an average over sampled noisy states and timesteps
+- $\frac{1}{K}\sum_{k=1}^{K}$: average over chunks indexed by $k$
+- $w(t_k)$: weighting function applied at timestep $t_k$
+- $\mathbf{u}_\theta$: learned model prediction
+- $\mathbf{v}^{k}$: target denoising direction for chunk $k$
+- $\lVert \cdot \rVert^2$: squared error magnitude
+
+If any of those symbols feel dense, use [Notation Guide](../reference/notation-guide.md#equation-reading-walkthroughs).
+
 Do not let the notation obscure the point.
 The teaching meaning is:
 
@@ -93,6 +128,16 @@ That is why DreamZero's story is stronger than:
 Its claim is deeper:
 
 > action quality improves when the model's internal future world picture improves.
+
+## Range-Notation Reminder
+
+The ranges in Equation (1) are the most important notation habit on this page:
+
+- $\mathbf{o}_{0:l}$ means visual history up to the present anchor
+- $\mathbf{o}_{l:l+H}$ means the future slice to be predicted
+- $\mathbf{a}_{l:l+H}$ means the corresponding future action slice
+
+This is why the equation reads like a mapping from past context to future world-action structure.
 
 ## Reader Warning
 
