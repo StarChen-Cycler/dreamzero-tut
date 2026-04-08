@@ -20,9 +20,17 @@ A control pattern where each new action depends on fresh observations from the e
 
 A generative model trained to reverse a noise process and recover structured data from noisy inputs.
 
+## Flow Matching
+
+A training approach where the model learns the direction that moves a noisy sample toward the clean target.
+
 ## Embodiment
 
 The robot's body, sensors, and actuators as a physical system.
+
+## Horizon
+
+The forward prediction span, often written as $H$, that tells you how far into the future the model predicts.
 
 ## IDM
 
@@ -35,6 +43,18 @@ A transformer inference cache that reuses past key and value tensors to avoid re
 ## Proprioception
 
 Internal body state such as joint angles, velocities, or related motor state.
+
+## Timestep
+
+A scalar such as $t_k$ that controls the noise level or denoising stage of a sample.
+
+## Latent
+
+A compressed internal representation used by a model instead of raw pixels or other raw data.
+
+## Chunk
+
+A local segment of a longer sequence, often indexed by $k$ in the DreamZero equations.
 
 ## VLA
 

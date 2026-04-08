@@ -6,7 +6,7 @@
     "project_name": "dream-zero-guide",
     "version": "1.0.0",
     "created_at": "2026-04-07T07:37:58.061Z",
-    "updated_at": "2026-04-08T05:04:30.654Z"
+    "updated_at": "2026-04-08T03:48:10.707Z"
   },
   "tasks": {
     "3951f335-5b54-460d-a59b-22604a347f2f": {
@@ -368,48 +368,45 @@
       "id": "c4027804-2f36-4ad8-9733-e7cc07f2ed06",
       "title": "Write DreamZero notation guide for core equations",
       "description": "Create a notation-focused reference page that explains the symbols, indices, operators, and conditioning structure used in DreamZero's core formulas, so readers with general math background can decode equations (1)-(3) instead of only reading prose summaries.",
-      "status": "completed",
+      "status": "ready",
       "priority": "top",
       "success_criteria": [
         {
           "id": "e0e31f04-19aa-458c-8508-4af154c0dcc5",
           "text": "Document at least 18 distinct symbols or operators appearing in equations (1)-(3) and the main timing formulas, each with meaning, role, and source anchor.",
-          "completed": true,
-          "completed_at": "2026-04-08T05:04:01.104Z"
+          "completed": false
         },
         {
           "id": "1630e41a-b06a-4cab-b832-c21c0bcb340f",
           "text": "Explain at least 4 notation patterns such as conditioning bars, index ranges, superscripts, and expectation or norm operators.",
-          "completed": true,
-          "completed_at": "2026-04-08T05:04:01.104Z"
+          "completed": false
         },
         {
           "id": "c1280402-f41b-4c56-823c-c0f413c3cf8d",
           "text": "Link the notation guide from the formula sheet and expose it in MkDocs navigation with 0 build errors after implementation.",
-          "completed": true,
-          "completed_at": "2026-04-08T05:04:01.104Z"
+          "completed": false
         }
       ],
       "deliverables": [
         {
           "id": "26fad750-da8c-4e66-b08f-adc6f029c273",
           "text": "docs/reference/notation-guide.md",
-          "completed": true
+          "completed": false
         },
         {
           "id": "e54d168c-dd62-45d0-a215-be1bda05b9b7",
           "text": "Updated docs/reference/formula-sheet.md",
-          "completed": true
+          "completed": false
         },
         {
           "id": "81cd61b3-6d51-4a11-afe3-eeed8f1d71c6",
           "text": "Updated docs/reference/glossary.md",
-          "completed": true
+          "completed": false
         },
         {
           "id": "3c6360a0-ebd9-4cac-baa0-c0a972e50332",
           "text": "Updated mkdocs.yml navigation",
-          "completed": true
+          "completed": false
         }
       ],
       "need_fix": [],
@@ -428,11 +425,11 @@
         ".memo/memodocs/tech_spec_dream-zero-guide.md",
         "CLAUDE.md"
       ],
-      "notes": "Context entrypoint for new sessions: read .memo/memodocs/user_spec_dream-zero-guide.md, .memo/memodocs/tech_spec_dream-zero-guide.md, CLAUDE.md, and docs/reference/source-verification.md before deepening notation explanations.\n\nRoot-cause of the current weakness: the materials explain equation purpose but not enough symbol semantics. Fix the notation layer first before expanding tutorial prose elsewhere.\n\nC7 MCP guidance could not be attached in this session because the context7 tools were unavailable; follow the existing MkDocs relative-link and math-rendering patterns already present in the repo.\n\nAdded docs/reference/notation-guide.md with symbol-by-symbol explanations, notation patterns, and equation walkthroughs; linked it from formula-sheet.md; extended glossary.md with flow matching, horizon, timestep, latent, and chunk; added the new page to mkdocs.yml navigation; verified rendering with .venv\\\\Scripts\\\\python -m mkdocs build. Context7 guidance remained unavailable, so implementation followed the repo's existing MkDocs math/linking patterns.",
+      "notes": "Context entrypoint for new sessions: read .memo/memodocs/user_spec_dream-zero-guide.md, .memo/memodocs/tech_spec_dream-zero-guide.md, CLAUDE.md, and docs/reference/source-verification.md before deepening notation explanations.\n\nRoot-cause of the current weakness: the materials explain equation purpose but not enough symbol semantics. Fix the notation layer first before expanding tutorial prose elsewhere.\n\nC7 MCP guidance could not be attached in this session because the context7 tools were unavailable; follow the existing MkDocs relative-link and math-rendering patterns already present in the repo.",
       "c7_verified": [],
       "created_at": "2026-04-08T03:47:41.731Z",
-      "updated_at": "2026-04-08T05:04:30.654Z",
-      "completed_at": "2026-04-08T05:04:01.104Z",
+      "updated_at": "2026-04-08T03:47:41.731Z",
+      "completed_at": null,
       "edges": [
         "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
       ]
@@ -441,7 +438,7 @@
       "id": "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a",
       "title": "Integrate symbol explanations into DreamZero tutorial materials",
       "description": "Update the equation-heavy tutorial pages so readers do not have to bounce between formulas and guess what the notation means. Add nearby symbol legends, notation-reading cues, and explicit references to the notation guide across the lecture and stable reference layers.",
-      "status": "ready",
+      "status": "blocked",
       "priority": "second",
       "success_criteria": [
         {
@@ -543,7 +540,7 @@
   "indexes": {
     "byStatus": {
       "ready": [
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
       ],
       "in_progress": [],
       "in_review": [],
@@ -552,10 +549,11 @@
         "879265ec-b906-4cca-9948-e5bf5c8a2c62",
         "395e913e-4e84-4d65-a853-3108d7f6fcca",
         "cd0343a6-de59-423e-9ff8-8fc8b5370385",
-        "c27d4d76-ca06-43ba-b361-7b625c3f8e42",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
+        "c27d4d76-ca06-43ba-b361-7b625c3f8e42"
       ],
-      "blocked": []
+      "blocked": [
+        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+      ]
     },
     "byPriority": {
       "top": [
@@ -998,8 +996,7 @@
       ],
       "added": [
         "3951f335-5b54-460d-a59b-22604a347f2f",
-        "879265ec-b906-4cca-9948-e5bf5c8a2c62",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
+        "879265ec-b906-4cca-9948-e5bf5c8a2c62"
       ],
       "prefer": [
         "3951f335-5b54-460d-a59b-22604a347f2f"
@@ -1012,8 +1009,7 @@
         "879265ec-b906-4cca-9948-e5bf5c8a2c62",
         "395e913e-4e84-4d65-a853-3108d7f6fcca",
         "cd0343a6-de59-423e-9ff8-8fc8b5370385",
-        "c27d4d76-ca06-43ba-b361-7b625c3f8e42",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
+        "c27d4d76-ca06-43ba-b361-7b625c3f8e42"
       ],
       "docs": [
         "3951f335-5b54-460d-a59b-22604a347f2f",
@@ -1052,7 +1048,6 @@
         "395e913e-4e84-4d65-a853-3108d7f6fcca",
         "cd0343a6-de59-423e-9ff8-8fc8b5370385",
         "c27d4d76-ca06-43ba-b361-7b625c3f8e42",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06",
         "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
       ],
       "mkdocs": [
@@ -1064,21 +1059,18 @@
         "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
       ],
       "yml": [
-        "3951f335-5b54-460d-a59b-22604a347f2f",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
+        "3951f335-5b54-460d-a59b-22604a347f2f"
       ],
       "navigation": [
         "3951f335-5b54-460d-a59b-22604a347f2f",
-        "c27d4d76-ca06-43ba-b361-7b625c3f8e42",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
+        "c27d4d76-ca06-43ba-b361-7b625c3f8e42"
       ],
       "build": [
         "3951f335-5b54-460d-a59b-22604a347f2f",
         "879265ec-b906-4cca-9948-e5bf5c8a2c62",
         "395e913e-4e84-4d65-a853-3108d7f6fcca",
         "cd0343a6-de59-423e-9ff8-8fc8b5370385",
-        "c27d4d76-ca06-43ba-b361-7b625c3f8e42",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
+        "c27d4d76-ca06-43ba-b361-7b625c3f8e42"
       ],
       "with": [
         "3951f335-5b54-460d-a59b-22604a347f2f",
@@ -1094,32 +1086,28 @@
         "879265ec-b906-4cca-9948-e5bf5c8a2c62",
         "395e913e-4e84-4d65-a853-3108d7f6fcca",
         "cd0343a6-de59-423e-9ff8-8fc8b5370385",
-        "c27d4d76-ca06-43ba-b361-7b625c3f8e42",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
+        "c27d4d76-ca06-43ba-b361-7b625c3f8e42"
       ],
       "scripts": [
         "3951f335-5b54-460d-a59b-22604a347f2f",
         "879265ec-b906-4cca-9948-e5bf5c8a2c62",
         "395e913e-4e84-4d65-a853-3108d7f6fcca",
         "cd0343a6-de59-423e-9ff8-8fc8b5370385",
-        "c27d4d76-ca06-43ba-b361-7b625c3f8e42",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
+        "c27d4d76-ca06-43ba-b361-7b625c3f8e42"
       ],
       "python": [
         "3951f335-5b54-460d-a59b-22604a347f2f",
         "879265ec-b906-4cca-9948-e5bf5c8a2c62",
         "395e913e-4e84-4d65-a853-3108d7f6fcca",
         "cd0343a6-de59-423e-9ff8-8fc8b5370385",
-        "c27d4d76-ca06-43ba-b361-7b625c3f8e42",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
+        "c27d4d76-ca06-43ba-b361-7b625c3f8e42"
       ],
       "m": [
         "3951f335-5b54-460d-a59b-22604a347f2f",
         "879265ec-b906-4cca-9948-e5bf5c8a2c62",
         "395e913e-4e84-4d65-a853-3108d7f6fcca",
         "cd0343a6-de59-423e-9ff8-8fc8b5370385",
-        "c27d4d76-ca06-43ba-b361-7b625c3f8e42",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
+        "c27d4d76-ca06-43ba-b361-7b625c3f8e42"
       ],
       "method": [
         "3951f335-5b54-460d-a59b-22604a347f2f"
@@ -1327,7 +1315,6 @@
         "395e913e-4e84-4d65-a853-3108d7f6fcca",
         "cd0343a6-de59-423e-9ff8-8fc8b5370385",
         "c27d4d76-ca06-43ba-b361-7b625c3f8e42",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06",
         "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
       ],
       "corrupted": [
@@ -1401,12 +1388,10 @@
         "879265ec-b906-4cca-9948-e5bf5c8a2c62"
       ],
       "glossary": [
-        "879265ec-b906-4cca-9948-e5bf5c8a2c62",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
+        "879265ec-b906-4cca-9948-e5bf5c8a2c62"
       ],
       "linked": [
-        "879265ec-b906-4cca-9948-e5bf5c8a2c62",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
+        "879265ec-b906-4cca-9948-e5bf5c8a2c62"
       ],
       "robotics": [
         "879265ec-b906-4cca-9948-e5bf5c8a2c62"
@@ -1421,8 +1406,7 @@
         "879265ec-b906-4cca-9948-e5bf5c8a2c62"
       ],
       "extended": [
-        "879265ec-b906-4cca-9948-e5bf5c8a2c62",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
+        "879265ec-b906-4cca-9948-e5bf5c8a2c62"
       ],
       "observation": [
         "879265ec-b906-4cca-9948-e5bf5c8a2c62"
@@ -1464,12 +1448,10 @@
         "cd0343a6-de59-423e-9ff8-8fc8b5370385"
       ],
       "formula": [
-        "395e913e-4e84-4d65-a853-3108d7f6fcca",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
+        "395e913e-4e84-4d65-a853-3108d7f6fcca"
       ],
       "sheet": [
-        "395e913e-4e84-4d65-a853-3108d7f6fcca",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
+        "395e913e-4e84-4d65-a853-3108d7f6fcca"
       ],
       "pages": [
         "395e913e-4e84-4d65-a853-3108d7f6fcca",
@@ -1647,8 +1629,7 @@
         "cd0343a6-de59-423e-9ff8-8fc8b5370385"
       ],
       "by": [
-        "cd0343a6-de59-423e-9ff8-8fc8b5370385",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
+        "cd0343a6-de59-423e-9ff8-8fc8b5370385"
       ],
       "contributors": [
         "cd0343a6-de59-423e-9ff8-8fc8b5370385"
@@ -1728,8 +1709,7 @@
       ],
       "it": [
         "cd0343a6-de59-423e-9ff8-8fc8b5370385",
-        "c27d4d76-ca06-43ba-b361-7b625c3f8e42",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
+        "c27d4d76-ca06-43ba-b361-7b625c3f8e42"
       ],
       "disciplined": [
         "cd0343a6-de59-423e-9ff8-8fc8b5370385"
@@ -2039,39 +2019,6 @@
         "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
       ],
       "repo": [
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
-      ],
-      "walkthroughs": [
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
-      ],
-      "flow": [
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
-      ],
-      "matching": [
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
-      ],
-      "horizon": [
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
-      ],
-      "timestep": [
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
-      ],
-      "latent": [
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
-      ],
-      "chunk": [
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
-      ],
-      "remained": [
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
-      ],
-      "implementation": [
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
-      ],
-      "followed": [
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
-      ],
-      "linking": [
         "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
       ],
       "integrate": [

@@ -6,7 +6,7 @@
     "project_name": "dream-zero-guide",
     "version": "1.0.0",
     "created_at": "2026-04-07T07:37:58.061Z",
-    "updated_at": "2026-04-08T05:04:30.654Z"
+    "updated_at": "2026-04-08T03:47:41.731Z"
   },
   "tasks": {
     "3951f335-5b54-460d-a59b-22604a347f2f": {
@@ -368,48 +368,45 @@
       "id": "c4027804-2f36-4ad8-9733-e7cc07f2ed06",
       "title": "Write DreamZero notation guide for core equations",
       "description": "Create a notation-focused reference page that explains the symbols, indices, operators, and conditioning structure used in DreamZero's core formulas, so readers with general math background can decode equations (1)-(3) instead of only reading prose summaries.",
-      "status": "completed",
+      "status": "ready",
       "priority": "top",
       "success_criteria": [
         {
           "id": "e0e31f04-19aa-458c-8508-4af154c0dcc5",
           "text": "Document at least 18 distinct symbols or operators appearing in equations (1)-(3) and the main timing formulas, each with meaning, role, and source anchor.",
-          "completed": true,
-          "completed_at": "2026-04-08T05:04:01.104Z"
+          "completed": false
         },
         {
           "id": "1630e41a-b06a-4cab-b832-c21c0bcb340f",
           "text": "Explain at least 4 notation patterns such as conditioning bars, index ranges, superscripts, and expectation or norm operators.",
-          "completed": true,
-          "completed_at": "2026-04-08T05:04:01.104Z"
+          "completed": false
         },
         {
           "id": "c1280402-f41b-4c56-823c-c0f413c3cf8d",
           "text": "Link the notation guide from the formula sheet and expose it in MkDocs navigation with 0 build errors after implementation.",
-          "completed": true,
-          "completed_at": "2026-04-08T05:04:01.104Z"
+          "completed": false
         }
       ],
       "deliverables": [
         {
           "id": "26fad750-da8c-4e66-b08f-adc6f029c273",
           "text": "docs/reference/notation-guide.md",
-          "completed": true
+          "completed": false
         },
         {
           "id": "e54d168c-dd62-45d0-a215-be1bda05b9b7",
           "text": "Updated docs/reference/formula-sheet.md",
-          "completed": true
+          "completed": false
         },
         {
           "id": "81cd61b3-6d51-4a11-afe3-eeed8f1d71c6",
           "text": "Updated docs/reference/glossary.md",
-          "completed": true
+          "completed": false
         },
         {
           "id": "3c6360a0-ebd9-4cac-baa0-c0a972e50332",
           "text": "Updated mkdocs.yml navigation",
-          "completed": true
+          "completed": false
         }
       ],
       "need_fix": [],
@@ -428,82 +425,10 @@
         ".memo/memodocs/tech_spec_dream-zero-guide.md",
         "CLAUDE.md"
       ],
-      "notes": "Context entrypoint for new sessions: read .memo/memodocs/user_spec_dream-zero-guide.md, .memo/memodocs/tech_spec_dream-zero-guide.md, CLAUDE.md, and docs/reference/source-verification.md before deepening notation explanations.\n\nRoot-cause of the current weakness: the materials explain equation purpose but not enough symbol semantics. Fix the notation layer first before expanding tutorial prose elsewhere.\n\nC7 MCP guidance could not be attached in this session because the context7 tools were unavailable; follow the existing MkDocs relative-link and math-rendering patterns already present in the repo.\n\nAdded docs/reference/notation-guide.md with symbol-by-symbol explanations, notation patterns, and equation walkthroughs; linked it from formula-sheet.md; extended glossary.md with flow matching, horizon, timestep, latent, and chunk; added the new page to mkdocs.yml navigation; verified rendering with .venv\\\\Scripts\\\\python -m mkdocs build. Context7 guidance remained unavailable, so implementation followed the repo's existing MkDocs math/linking patterns.",
+      "notes": "Context entrypoint for new sessions: read .memo/memodocs/user_spec_dream-zero-guide.md, .memo/memodocs/tech_spec_dream-zero-guide.md, CLAUDE.md, and docs/reference/source-verification.md before deepening notation explanations.\n\nRoot-cause of the current weakness: the materials explain equation purpose but not enough symbol semantics. Fix the notation layer first before expanding tutorial prose elsewhere.\n\nC7 MCP guidance could not be attached in this session because the context7 tools were unavailable; follow the existing MkDocs relative-link and math-rendering patterns already present in the repo.",
       "c7_verified": [],
       "created_at": "2026-04-08T03:47:41.731Z",
-      "updated_at": "2026-04-08T05:04:30.654Z",
-      "completed_at": "2026-04-08T05:04:01.104Z",
-      "edges": [
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
-      ]
-    },
-    "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a": {
-      "id": "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a",
-      "title": "Integrate symbol explanations into DreamZero tutorial materials",
-      "description": "Update the equation-heavy tutorial pages so readers do not have to bounce between formulas and guess what the notation means. Add nearby symbol legends, notation-reading cues, and explicit references to the notation guide across the lecture and stable reference layers.",
-      "status": "ready",
-      "priority": "second",
-      "success_criteria": [
-        {
-          "id": "9507ffd9-2797-4722-a274-c5d2f5518276",
-          "text": "Update at least 4 material pages so every displayed paper-derived formula has either a nearby symbol legend or a direct notation-guide pointer.",
-          "completed": false
-        },
-        {
-          "id": "c9ba6467-1690-4fef-bbb9-d995eb1f0dd5",
-          "text": "Add at least 1 explicit explanation of index or range notation to each revised tutorial page that contains paper-derived formulas.",
-          "completed": false
-        },
-        {
-          "id": "95447895-a83c-4374-b5f0-fd90c75463f9",
-          "text": "Run mkdocs build successfully after the tutorial integration changes with 0 build errors.",
-          "completed": false
-        }
-      ],
-      "deliverables": [
-        {
-          "id": "a9555891-ecbf-462d-9ec2-279b07354c85",
-          "text": "Updated docs/lecture/05-core-equations.md",
-          "completed": false
-        },
-        {
-          "id": "e4b55db6-67d9-4b66-967c-20275995c0c8",
-          "text": "Updated docs/lecture/06-system-and-inference.md",
-          "completed": false
-        },
-        {
-          "id": "4abf275b-e382-4831-b1ca-67d2d1d26453",
-          "text": "Updated docs/lecture/02-prerequisites.md or docs/report/dreamzero-standard-reference.md",
-          "completed": false
-        },
-        {
-          "id": "a473f8e9-9725-4577-b7ab-b820a80e4a65",
-          "text": "Cross-links from tutorial pages to docs/reference/notation-guide.md",
-          "completed": false
-        }
-      ],
-      "need_fix": [],
-      "assignee": null,
-      "blockers": [
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
-      ],
-      "dependencies": "Needs the notation guide task c4027804 to establish a stable symbol vocabulary and anchor links before tutorial pages are expanded.",
-      "sub_items": [],
-      "related_files": [
-        "docs/lecture/02-prerequisites.md",
-        "docs/lecture/05-core-equations.md",
-        "docs/lecture/06-system-and-inference.md",
-        "docs/report/dreamzero-standard-reference.md",
-        "docs/reference/notation-guide.md",
-        "docs/reference/source-verification.md",
-        ".memo/memodocs/user_spec_dream-zero-guide.md",
-        ".memo/memodocs/tech_spec_dream-zero-guide.md",
-        "CLAUDE.md"
-      ],
-      "notes": "Context entrypoint for new sessions: start with .memo/memodocs/user_spec_dream-zero-guide.md, .memo/memodocs/tech_spec_dream-zero-guide.md, CLAUDE.md, docs/reference/source-verification.md, and the completed notation guide task before revising tutorial prose.\n\nThis task should consume the notation guide from c4027804 instead of inventing inconsistent symbol explanations in each page.\n\nKeep the project's accessibility goal visible: the user specifically asked for deeper explanation of what each symbol stands for, not just more high-level summary.",
-      "c7_verified": [],
-      "created_at": "2026-04-08T03:48:10.707Z",
-      "updated_at": "2026-04-08T03:48:10.707Z",
+      "updated_at": "2026-04-08T03:47:41.731Z",
       "completed_at": null,
       "edges": []
     }
@@ -533,17 +458,12 @@
       "from": "cd0343a6-de59-423e-9ff8-8fc8b5370385",
       "to": "c27d4d76-ca06-43ba-b361-7b625c3f8e42",
       "type": "blocks"
-    },
-    {
-      "from": "c4027804-2f36-4ad8-9733-e7cc07f2ed06",
-      "to": "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a",
-      "type": "blocks"
     }
   ],
   "indexes": {
     "byStatus": {
       "ready": [
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
       ],
       "in_progress": [],
       "in_review": [],
@@ -552,8 +472,7 @@
         "879265ec-b906-4cca-9948-e5bf5c8a2c62",
         "395e913e-4e84-4d65-a853-3108d7f6fcca",
         "cd0343a6-de59-423e-9ff8-8fc8b5370385",
-        "c27d4d76-ca06-43ba-b361-7b625c3f8e42",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
+        "c27d4d76-ca06-43ba-b361-7b625c3f8e42"
       ],
       "blocked": []
     },
@@ -566,8 +485,7 @@
       ],
       "second": [
         "cd0343a6-de59-423e-9ff8-8fc8b5370385",
-        "c27d4d76-ca06-43ba-b361-7b625c3f8e42",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "c27d4d76-ca06-43ba-b361-7b625c3f8e42"
       ],
       "later": []
     },
@@ -575,7 +493,9 @@
       "3951f335-5b54-460d-a59b-22604a347f2f",
       "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
     ],
-    "orphanTasks": [],
+    "orphanTasks": [
+      "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
+    ],
     "searchText": {
       "1": [
         "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
@@ -593,8 +513,7 @@
         "395e913e-4e84-4d65-a853-3108d7f6fcca",
         "cd0343a6-de59-423e-9ff8-8fc8b5370385",
         "c27d4d76-ca06-43ba-b361-7b625c3f8e42",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
       ],
       "verification": [
         "3951f335-5b54-460d-a59b-22604a347f2f",
@@ -602,8 +521,7 @@
         "395e913e-4e84-4d65-a853-3108d7f6fcca",
         "cd0343a6-de59-423e-9ff8-8fc8b5370385",
         "c27d4d76-ca06-43ba-b361-7b625c3f8e42",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
       ],
       "note": [
         "3951f335-5b54-460d-a59b-22604a347f2f",
@@ -617,15 +535,13 @@
         "395e913e-4e84-4d65-a853-3108d7f6fcca",
         "cd0343a6-de59-423e-9ff8-8fc8b5370385",
         "c27d4d76-ca06-43ba-b361-7b625c3f8e42",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
       ],
       "dreamzero": [
         "3951f335-5b54-460d-a59b-22604a347f2f",
         "395e913e-4e84-4d65-a853-3108d7f6fcca",
         "cd0343a6-de59-423e-9ff8-8fc8b5370385",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
       ],
       "paper": [
         "3951f335-5b54-460d-a59b-22604a347f2f"
@@ -639,8 +555,7 @@
         "395e913e-4e84-4d65-a853-3108d7f6fcca",
         "cd0343a6-de59-423e-9ff8-8fc8b5370385",
         "c27d4d76-ca06-43ba-b361-7b625c3f8e42",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
       ],
       "extracted": [
         "3951f335-5b54-460d-a59b-22604a347f2f"
@@ -657,8 +572,7 @@
         "395e913e-4e84-4d65-a853-3108d7f6fcca",
         "cd0343a6-de59-423e-9ff8-8fc8b5370385",
         "c27d4d76-ca06-43ba-b361-7b625c3f8e42",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
       ],
       "figures": [
         "3951f335-5b54-460d-a59b-22604a347f2f"
@@ -680,8 +594,7 @@
       ],
       "notation": [
         "3951f335-5b54-460d-a59b-22604a347f2f",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
       ],
       "issues": [
         "3951f335-5b54-460d-a59b-22604a347f2f"
@@ -708,8 +621,7 @@
         "3951f335-5b54-460d-a59b-22604a347f2f",
         "879265ec-b906-4cca-9948-e5bf5c8a2c62",
         "395e913e-4e84-4d65-a853-3108d7f6fcca",
-        "cd0343a6-de59-423e-9ff8-8fc8b5370385",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "cd0343a6-de59-423e-9ff8-8fc8b5370385"
       ],
       "report": [
         "3951f335-5b54-460d-a59b-22604a347f2f",
@@ -731,8 +643,7 @@
         "879265ec-b906-4cca-9948-e5bf5c8a2c62",
         "395e913e-4e84-4d65-a853-3108d7f6fcca",
         "cd0343a6-de59-423e-9ff8-8fc8b5370385",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
       ],
       "refining": [
         "3951f335-5b54-460d-a59b-22604a347f2f"
@@ -751,8 +662,7 @@
       "formulas": [
         "3951f335-5b54-460d-a59b-22604a347f2f",
         "395e913e-4e84-4d65-a853-3108d7f6fcca",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
       ],
       "context": [
         "3951f335-5b54-460d-a59b-22604a347f2f",
@@ -760,8 +670,7 @@
         "395e913e-4e84-4d65-a853-3108d7f6fcca",
         "cd0343a6-de59-423e-9ff8-8fc8b5370385",
         "c27d4d76-ca06-43ba-b361-7b625c3f8e42",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
       ],
       "entrypoint": [
         "3951f335-5b54-460d-a59b-22604a347f2f",
@@ -769,8 +678,7 @@
         "395e913e-4e84-4d65-a853-3108d7f6fcca",
         "cd0343a6-de59-423e-9ff8-8fc8b5370385",
         "c27d4d76-ca06-43ba-b361-7b625c3f8e42",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
       ],
       "new": [
         "3951f335-5b54-460d-a59b-22604a347f2f",
@@ -778,8 +686,7 @@
         "395e913e-4e84-4d65-a853-3108d7f6fcca",
         "cd0343a6-de59-423e-9ff8-8fc8b5370385",
         "c27d4d76-ca06-43ba-b361-7b625c3f8e42",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
       ],
       "sessions": [
         "3951f335-5b54-460d-a59b-22604a347f2f",
@@ -787,8 +694,7 @@
         "395e913e-4e84-4d65-a853-3108d7f6fcca",
         "cd0343a6-de59-423e-9ff8-8fc8b5370385",
         "c27d4d76-ca06-43ba-b361-7b625c3f8e42",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
       ],
       "read": [
         "3951f335-5b54-460d-a59b-22604a347f2f",
@@ -803,8 +709,7 @@
         "395e913e-4e84-4d65-a853-3108d7f6fcca",
         "cd0343a6-de59-423e-9ff8-8fc8b5370385",
         "c27d4d76-ca06-43ba-b361-7b625c3f8e42",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
       ],
       "memodocs": [
         "3951f335-5b54-460d-a59b-22604a347f2f",
@@ -812,8 +717,7 @@
         "395e913e-4e84-4d65-a853-3108d7f6fcca",
         "cd0343a6-de59-423e-9ff8-8fc8b5370385",
         "c27d4d76-ca06-43ba-b361-7b625c3f8e42",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
       ],
       "user_spec_dream": [
         "3951f335-5b54-460d-a59b-22604a347f2f",
@@ -821,8 +725,7 @@
         "395e913e-4e84-4d65-a853-3108d7f6fcca",
         "cd0343a6-de59-423e-9ff8-8fc8b5370385",
         "c27d4d76-ca06-43ba-b361-7b625c3f8e42",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
       ],
       "zero": [
         "3951f335-5b54-460d-a59b-22604a347f2f",
@@ -830,8 +733,7 @@
         "395e913e-4e84-4d65-a853-3108d7f6fcca",
         "cd0343a6-de59-423e-9ff8-8fc8b5370385",
         "c27d4d76-ca06-43ba-b361-7b625c3f8e42",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
       ],
       "guide": [
         "3951f335-5b54-460d-a59b-22604a347f2f",
@@ -839,8 +741,7 @@
         "395e913e-4e84-4d65-a853-3108d7f6fcca",
         "cd0343a6-de59-423e-9ff8-8fc8b5370385",
         "c27d4d76-ca06-43ba-b361-7b625c3f8e42",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
       ],
       "md": [
         "3951f335-5b54-460d-a59b-22604a347f2f",
@@ -848,8 +749,7 @@
         "395e913e-4e84-4d65-a853-3108d7f6fcca",
         "cd0343a6-de59-423e-9ff8-8fc8b5370385",
         "c27d4d76-ca06-43ba-b361-7b625c3f8e42",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
       ],
       "tech_spec_dream": [
         "3951f335-5b54-460d-a59b-22604a347f2f",
@@ -857,8 +757,7 @@
         "395e913e-4e84-4d65-a853-3108d7f6fcca",
         "cd0343a6-de59-423e-9ff8-8fc8b5370385",
         "c27d4d76-ca06-43ba-b361-7b625c3f8e42",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
       ],
       "claude": [
         "3951f335-5b54-460d-a59b-22604a347f2f",
@@ -866,8 +765,7 @@
         "395e913e-4e84-4d65-a853-3108d7f6fcca",
         "cd0343a6-de59-423e-9ff8-8fc8b5370385",
         "c27d4d76-ca06-43ba-b361-7b625c3f8e42",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
       ],
       "editing": [
         "3951f335-5b54-460d-a59b-22604a347f2f",
@@ -891,8 +789,7 @@
         "395e913e-4e84-4d65-a853-3108d7f6fcca",
         "cd0343a6-de59-423e-9ff8-8fc8b5370385",
         "c27d4d76-ca06-43ba-b361-7b625c3f8e42",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
       ],
       "system": [
         "3951f335-5b54-460d-a59b-22604a347f2f",
@@ -953,15 +850,13 @@
       ],
       "do": [
         "3951f335-5b54-460d-a59b-22604a347f2f",
-        "395e913e-4e84-4d65-a853-3108d7f6fcca",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "395e913e-4e84-4d65-a853-3108d7f6fcca"
       ],
       "not": [
         "3951f335-5b54-460d-a59b-22604a347f2f",
         "879265ec-b906-4cca-9948-e5bf5c8a2c62",
         "395e913e-4e84-4d65-a853-3108d7f6fcca",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
       ],
       "edit": [
         "3951f335-5b54-460d-a59b-22604a347f2f"
@@ -998,8 +893,7 @@
       ],
       "added": [
         "3951f335-5b54-460d-a59b-22604a347f2f",
-        "879265ec-b906-4cca-9948-e5bf5c8a2c62",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
+        "879265ec-b906-4cca-9948-e5bf5c8a2c62"
       ],
       "prefer": [
         "3951f335-5b54-460d-a59b-22604a347f2f"
@@ -1012,8 +906,7 @@
         "879265ec-b906-4cca-9948-e5bf5c8a2c62",
         "395e913e-4e84-4d65-a853-3108d7f6fcca",
         "cd0343a6-de59-423e-9ff8-8fc8b5370385",
-        "c27d4d76-ca06-43ba-b361-7b625c3f8e42",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
+        "c27d4d76-ca06-43ba-b361-7b625c3f8e42"
       ],
       "docs": [
         "3951f335-5b54-460d-a59b-22604a347f2f",
@@ -1021,8 +914,7 @@
         "395e913e-4e84-4d65-a853-3108d7f6fcca",
         "cd0343a6-de59-423e-9ff8-8fc8b5370385",
         "c27d4d76-ca06-43ba-b361-7b625c3f8e42",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
       ],
       "reference": [
         "3951f335-5b54-460d-a59b-22604a347f2f",
@@ -1030,8 +922,7 @@
         "395e913e-4e84-4d65-a853-3108d7f6fcca",
         "cd0343a6-de59-423e-9ff8-8fc8b5370385",
         "c27d4d76-ca06-43ba-b361-7b625c3f8e42",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
       ],
       "implemented": [
         "3951f335-5b54-460d-a59b-22604a347f2f"
@@ -1051,9 +942,7 @@
         "879265ec-b906-4cca-9948-e5bf5c8a2c62",
         "395e913e-4e84-4d65-a853-3108d7f6fcca",
         "cd0343a6-de59-423e-9ff8-8fc8b5370385",
-        "c27d4d76-ca06-43ba-b361-7b625c3f8e42",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "c27d4d76-ca06-43ba-b361-7b625c3f8e42"
       ],
       "mkdocs": [
         "3951f335-5b54-460d-a59b-22604a347f2f",
@@ -1064,21 +953,18 @@
         "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
       ],
       "yml": [
-        "3951f335-5b54-460d-a59b-22604a347f2f",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
+        "3951f335-5b54-460d-a59b-22604a347f2f"
       ],
       "navigation": [
         "3951f335-5b54-460d-a59b-22604a347f2f",
-        "c27d4d76-ca06-43ba-b361-7b625c3f8e42",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
+        "c27d4d76-ca06-43ba-b361-7b625c3f8e42"
       ],
       "build": [
         "3951f335-5b54-460d-a59b-22604a347f2f",
         "879265ec-b906-4cca-9948-e5bf5c8a2c62",
         "395e913e-4e84-4d65-a853-3108d7f6fcca",
         "cd0343a6-de59-423e-9ff8-8fc8b5370385",
-        "c27d4d76-ca06-43ba-b361-7b625c3f8e42",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
+        "c27d4d76-ca06-43ba-b361-7b625c3f8e42"
       ],
       "with": [
         "3951f335-5b54-460d-a59b-22604a347f2f",
@@ -1086,40 +972,35 @@
         "395e913e-4e84-4d65-a853-3108d7f6fcca",
         "cd0343a6-de59-423e-9ff8-8fc8b5370385",
         "c27d4d76-ca06-43ba-b361-7b625c3f8e42",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
       ],
       "venv": [
         "3951f335-5b54-460d-a59b-22604a347f2f",
         "879265ec-b906-4cca-9948-e5bf5c8a2c62",
         "395e913e-4e84-4d65-a853-3108d7f6fcca",
         "cd0343a6-de59-423e-9ff8-8fc8b5370385",
-        "c27d4d76-ca06-43ba-b361-7b625c3f8e42",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
+        "c27d4d76-ca06-43ba-b361-7b625c3f8e42"
       ],
       "scripts": [
         "3951f335-5b54-460d-a59b-22604a347f2f",
         "879265ec-b906-4cca-9948-e5bf5c8a2c62",
         "395e913e-4e84-4d65-a853-3108d7f6fcca",
         "cd0343a6-de59-423e-9ff8-8fc8b5370385",
-        "c27d4d76-ca06-43ba-b361-7b625c3f8e42",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
+        "c27d4d76-ca06-43ba-b361-7b625c3f8e42"
       ],
       "python": [
         "3951f335-5b54-460d-a59b-22604a347f2f",
         "879265ec-b906-4cca-9948-e5bf5c8a2c62",
         "395e913e-4e84-4d65-a853-3108d7f6fcca",
         "cd0343a6-de59-423e-9ff8-8fc8b5370385",
-        "c27d4d76-ca06-43ba-b361-7b625c3f8e42",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
+        "c27d4d76-ca06-43ba-b361-7b625c3f8e42"
       ],
       "m": [
         "3951f335-5b54-460d-a59b-22604a347f2f",
         "879265ec-b906-4cca-9948-e5bf5c8a2c62",
         "395e913e-4e84-4d65-a853-3108d7f6fcca",
         "cd0343a6-de59-423e-9ff8-8fc8b5370385",
-        "c27d4d76-ca06-43ba-b361-7b625c3f8e42",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
+        "c27d4d76-ca06-43ba-b361-7b625c3f8e42"
       ],
       "method": [
         "3951f335-5b54-460d-a59b-22604a347f2f"
@@ -1135,8 +1016,7 @@
       ],
       "of": [
         "3951f335-5b54-460d-a59b-22604a347f2f",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
       ],
       "math": [
         "3951f335-5b54-460d-a59b-22604a347f2f",
@@ -1198,8 +1078,7 @@
       ],
       "readers": [
         "879265ec-b906-4cca-9948-e5bf5c8a2c62",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
       ],
       "strengthen": [
         "879265ec-b906-4cca-9948-e5bf5c8a2c62"
@@ -1235,8 +1114,7 @@
         "879265ec-b906-4cca-9948-e5bf5c8a2c62",
         "395e913e-4e84-4d65-a853-3108d7f6fcca",
         "cd0343a6-de59-423e-9ff8-8fc8b5370385",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
       ],
       "opening": [
         "879265ec-b906-4cca-9948-e5bf5c8a2c62"
@@ -1255,8 +1133,7 @@
       ],
       "explicit": [
         "879265ec-b906-4cca-9948-e5bf5c8a2c62",
-        "cd0343a6-de59-423e-9ff8-8fc8b5370385",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "cd0343a6-de59-423e-9ff8-8fc8b5370385"
       ],
       "about": [
         "879265ec-b906-4cca-9948-e5bf5c8a2c62",
@@ -1273,8 +1150,7 @@
         "879265ec-b906-4cca-9948-e5bf5c8a2c62"
       ],
       "start": [
-        "879265ec-b906-4cca-9948-e5bf5c8a2c62",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "879265ec-b906-4cca-9948-e5bf5c8a2c62"
       ],
       "then": [
         "879265ec-b906-4cca-9948-e5bf5c8a2c62",
@@ -1292,15 +1168,13 @@
         "879265ec-b906-4cca-9948-e5bf5c8a2c62",
         "cd0343a6-de59-423e-9ff8-8fc8b5370385",
         "c27d4d76-ca06-43ba-b361-7b625c3f8e42",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
       ],
       "task": [
         "879265ec-b906-4cca-9948-e5bf5c8a2c62",
         "395e913e-4e84-4d65-a853-3108d7f6fcca",
         "cd0343a6-de59-423e-9ff8-8fc8b5370385",
-        "c27d4d76-ca06-43ba-b361-7b625c3f8e42",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "c27d4d76-ca06-43ba-b361-7b625c3f8e42"
       ],
       "depends": [
         "879265ec-b906-4cca-9948-e5bf5c8a2c62"
@@ -1326,9 +1200,7 @@
         "879265ec-b906-4cca-9948-e5bf5c8a2c62",
         "395e913e-4e84-4d65-a853-3108d7f6fcca",
         "cd0343a6-de59-423e-9ff8-8fc8b5370385",
-        "c27d4d76-ca06-43ba-b361-7b625c3f8e42",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "c27d4d76-ca06-43ba-b361-7b625c3f8e42"
       ],
       "corrupted": [
         "879265ec-b906-4cca-9948-e5bf5c8a2c62"
@@ -1344,8 +1216,7 @@
       ],
       "keep": [
         "879265ec-b906-4cca-9948-e5bf5c8a2c62",
-        "cd0343a6-de59-423e-9ff8-8fc8b5370385",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "cd0343a6-de59-423e-9ff8-8fc8b5370385"
       ],
       "files": [
         "879265ec-b906-4cca-9948-e5bf5c8a2c62",
@@ -1372,8 +1243,7 @@
       ],
       "add": [
         "879265ec-b906-4cca-9948-e5bf5c8a2c62",
-        "395e913e-4e84-4d65-a853-3108d7f6fcca",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "395e913e-4e84-4d65-a853-3108d7f6fcca"
       ],
       "revised": [
         "879265ec-b906-4cca-9948-e5bf5c8a2c62"
@@ -1401,12 +1271,10 @@
         "879265ec-b906-4cca-9948-e5bf5c8a2c62"
       ],
       "glossary": [
-        "879265ec-b906-4cca-9948-e5bf5c8a2c62",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
+        "879265ec-b906-4cca-9948-e5bf5c8a2c62"
       ],
       "linked": [
-        "879265ec-b906-4cca-9948-e5bf5c8a2c62",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
+        "879265ec-b906-4cca-9948-e5bf5c8a2c62"
       ],
       "robotics": [
         "879265ec-b906-4cca-9948-e5bf5c8a2c62"
@@ -1421,8 +1289,7 @@
         "879265ec-b906-4cca-9948-e5bf5c8a2c62"
       ],
       "extended": [
-        "879265ec-b906-4cca-9948-e5bf5c8a2c62",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
+        "879265ec-b906-4cca-9948-e5bf5c8a2c62"
       ],
       "observation": [
         "879265ec-b906-4cca-9948-e5bf5c8a2c62"
@@ -1464,16 +1331,13 @@
         "cd0343a6-de59-423e-9ff8-8fc8b5370385"
       ],
       "formula": [
-        "395e913e-4e84-4d65-a853-3108d7f6fcca",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
+        "395e913e-4e84-4d65-a853-3108d7f6fcca"
       ],
       "sheet": [
-        "395e913e-4e84-4d65-a853-3108d7f6fcca",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
+        "395e913e-4e84-4d65-a853-3108d7f6fcca"
       ],
       "pages": [
-        "395e913e-4e84-4d65-a853-3108d7f6fcca",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "395e913e-4e84-4d65-a853-3108d7f6fcca"
       ],
       "mathematical": [
         "395e913e-4e84-4d65-a853-3108d7f6fcca"
@@ -1544,16 +1408,13 @@
       ],
       "prose": [
         "395e913e-4e84-4d65-a853-3108d7f6fcca",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
       ],
       "update": [
-        "395e913e-4e84-4d65-a853-3108d7f6fcca",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "395e913e-4e84-4d65-a853-3108d7f6fcca"
       ],
       "have": [
-        "395e913e-4e84-4d65-a853-3108d7f6fcca",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "395e913e-4e84-4d65-a853-3108d7f6fcca"
       ],
       "one": [
         "395e913e-4e84-4d65-a853-3108d7f6fcca"
@@ -1566,8 +1427,7 @@
       ],
       "page": [
         "395e913e-4e84-4d65-a853-3108d7f6fcca",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
       ],
       "refined": [
         "395e913e-4e84-4d65-a853-3108d7f6fcca",
@@ -1593,8 +1453,7 @@
       ],
       "explanations": [
         "395e913e-4e84-4d65-a853-3108d7f6fcca",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
       ],
       "after": [
         "395e913e-4e84-4d65-a853-3108d7f6fcca",
@@ -1631,8 +1490,7 @@
       ],
       "materials": [
         "cd0343a6-de59-423e-9ff8-8fc8b5370385",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
       ],
       "consistent": [
         "cd0343a6-de59-423e-9ff8-8fc8b5370385"
@@ -1647,15 +1505,13 @@
         "cd0343a6-de59-423e-9ff8-8fc8b5370385"
       ],
       "by": [
-        "cd0343a6-de59-423e-9ff8-8fc8b5370385",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
+        "cd0343a6-de59-423e-9ff8-8fc8b5370385"
       ],
       "contributors": [
         "cd0343a6-de59-423e-9ff8-8fc8b5370385"
       ],
       "stable": [
-        "cd0343a6-de59-423e-9ff8-8fc8b5370385",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "cd0343a6-de59-423e-9ff8-8fc8b5370385"
       ],
       "layer": [
         "cd0343a6-de59-423e-9ff8-8fc8b5370385",
@@ -1671,12 +1527,10 @@
       ],
       "completed": [
         "cd0343a6-de59-423e-9ff8-8fc8b5370385",
-        "c27d4d76-ca06-43ba-b361-7b625c3f8e42",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "c27d4d76-ca06-43ba-b361-7b625c3f8e42"
       ],
       "should": [
-        "cd0343a6-de59-423e-9ff8-8fc8b5370385",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "cd0343a6-de59-423e-9ff8-8fc8b5370385"
       ],
       "inherit": [
         "cd0343a6-de59-423e-9ff8-8fc8b5370385"
@@ -1697,8 +1551,7 @@
         "cd0343a6-de59-423e-9ff8-8fc8b5370385"
       ],
       "inventing": [
-        "cd0343a6-de59-423e-9ff8-8fc8b5370385",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "cd0343a6-de59-423e-9ff8-8fc8b5370385"
       ],
       "framing": [
         "cd0343a6-de59-423e-9ff8-8fc8b5370385"
@@ -1728,8 +1581,7 @@
       ],
       "it": [
         "cd0343a6-de59-423e-9ff8-8fc8b5370385",
-        "c27d4d76-ca06-43ba-b361-7b625c3f8e42",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
+        "c27d4d76-ca06-43ba-b361-7b625c3f8e42"
       ],
       "disciplined": [
         "cd0343a6-de59-423e-9ff8-8fc8b5370385"
@@ -1742,8 +1594,7 @@
       ],
       "s": [
         "cd0343a6-de59-423e-9ff8-8fc8b5370385",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
       ],
       "boundaries": [
         "cd0343a6-de59-423e-9ff8-8fc8b5370385"
@@ -1824,8 +1675,7 @@
         "c27d4d76-ca06-43ba-b361-7b625c3f8e42"
       ],
       "specifically": [
-        "c27d4d76-ca06-43ba-b361-7b625c3f8e42",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "c27d4d76-ca06-43ba-b361-7b625c3f8e42"
       ],
       "protect": [
         "c27d4d76-ca06-43ba-b361-7b625c3f8e42"
@@ -1853,8 +1703,7 @@
         "c27d4d76-ca06-43ba-b361-7b625c3f8e42"
       ],
       "references": [
-        "c27d4d76-ca06-43ba-b361-7b625c3f8e42",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "c27d4d76-ca06-43ba-b361-7b625c3f8e42"
       ],
       "octie": [
         "c27d4d76-ca06-43ba-b361-7b625c3f8e42"
@@ -1938,12 +1787,10 @@
         "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
       ],
       "instead": [
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
       ],
       "reading": [
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
       ],
       "summaries": [
         "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
@@ -1958,8 +1805,7 @@
         "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
       ],
       "equation": [
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
       ],
       "purpose": [
         "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
@@ -1968,8 +1814,7 @@
         "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
       ],
       "symbol": [
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
       ],
       "semantics": [
         "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
@@ -1981,8 +1826,7 @@
         "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
       ],
       "tutorial": [
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
       ],
       "elsewhere": [
         "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
@@ -2040,135 +1884,6 @@
       ],
       "repo": [
         "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
-      ],
-      "walkthroughs": [
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
-      ],
-      "flow": [
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
-      ],
-      "matching": [
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
-      ],
-      "horizon": [
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
-      ],
-      "timestep": [
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
-      ],
-      "latent": [
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
-      ],
-      "chunk": [
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
-      ],
-      "remained": [
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
-      ],
-      "implementation": [
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
-      ],
-      "followed": [
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
-      ],
-      "linking": [
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
-      ],
-      "integrate": [
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
-      ],
-      "into": [
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
-      ],
-      "heavy": [
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
-      ],
-      "bounce": [
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
-      ],
-      "between": [
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
-      ],
-      "guess": [
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
-      ],
-      "what": [
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
-      ],
-      "means": [
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
-      ],
-      "nearby": [
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
-      ],
-      "legends": [
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
-      ],
-      "cues": [
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
-      ],
-      "across": [
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
-      ],
-      "layers": [
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
-      ],
-      "revising": [
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
-      ],
-      "consume": [
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
-      ],
-      "c4027804": [
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
-      ],
-      "inconsistent": [
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
-      ],
-      "each": [
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
-      ],
-      "project": [
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
-      ],
-      "accessibility": [
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
-      ],
-      "goal": [
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
-      ],
-      "visible": [
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
-      ],
-      "user": [
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
-      ],
-      "asked": [
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
-      ],
-      "deeper": [
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
-      ],
-      "explanation": [
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
-      ],
-      "stands": [
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
-      ],
-      "just": [
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
-      ],
-      "more": [
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
-      ],
-      "high": [
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
-      ],
-      "level": [
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
-      ],
-      "summary": [
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
       ]
     },
     "files": {
@@ -2193,8 +1908,7 @@
         "395e913e-4e84-4d65-a853-3108d7f6fcca",
         "cd0343a6-de59-423e-9ff8-8fc8b5370385",
         "c27d4d76-ca06-43ba-b361-7b625c3f8e42",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
       ],
       ".memo/memodocs/tech_spec_dream-zero-guide.md": [
         "3951f335-5b54-460d-a59b-22604a347f2f",
@@ -2202,8 +1916,7 @@
         "395e913e-4e84-4d65-a853-3108d7f6fcca",
         "cd0343a6-de59-423e-9ff8-8fc8b5370385",
         "c27d4d76-ca06-43ba-b361-7b625c3f8e42",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
       ],
       "CLAUDE.md": [
         "3951f335-5b54-460d-a59b-22604a347f2f",
@@ -2211,8 +1924,7 @@
         "395e913e-4e84-4d65-a853-3108d7f6fcca",
         "cd0343a6-de59-423e-9ff8-8fc8b5370385",
         "c27d4d76-ca06-43ba-b361-7b625c3f8e42",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
       ],
       "docs/lecture/00-course-map.md": [
         "879265ec-b906-4cca-9948-e5bf5c8a2c62"
@@ -2221,8 +1933,7 @@
         "879265ec-b906-4cca-9948-e5bf5c8a2c62"
       ],
       "docs/lecture/02-prerequisites.md": [
-        "879265ec-b906-4cca-9948-e5bf5c8a2c62",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "879265ec-b906-4cca-9948-e5bf5c8a2c62"
       ],
       "docs/lecture/03-why-vlas-hit-a-wall.md": [
         "879265ec-b906-4cca-9948-e5bf5c8a2c62"
@@ -2236,12 +1947,10 @@
       ],
       "docs/lecture/05-core-equations.md": [
         "395e913e-4e84-4d65-a853-3108d7f6fcca",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
       ],
       "docs/lecture/06-system-and-inference.md": [
-        "395e913e-4e84-4d65-a853-3108d7f6fcca",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "395e913e-4e84-4d65-a853-3108d7f6fcca"
       ],
       "docs/reference/formula-sheet.md": [
         "395e913e-4e84-4d65-a853-3108d7f6fcca",
@@ -2258,18 +1967,13 @@
         "cd0343a6-de59-423e-9ff8-8fc8b5370385"
       ],
       "docs/report/dreamzero-standard-reference.md": [
-        "cd0343a6-de59-423e-9ff8-8fc8b5370385",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "cd0343a6-de59-423e-9ff8-8fc8b5370385"
       ],
       "README.md": [
         "c27d4d76-ca06-43ba-b361-7b625c3f8e42"
       ],
       "docs/reference/source-verification.md": [
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
-      ],
-      "docs/reference/notation-guide.md": [
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
+        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
       ]
     }
   }

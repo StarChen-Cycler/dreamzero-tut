@@ -3,6 +3,7 @@
 This page keeps the most important formulas in one place.
 
 Use [Source Verification](source-verification.md) to determine whether a formula below is fully source-literal or a teaching simplification.
+Use [Notation Guide](notation-guide.md) when you need to decode what the symbols, subscripts, superscripts, or operators mean.
 
 ## Teaching Formulas
 
@@ -47,6 +48,9 @@ The extracted source label attached to this equation is OCR-corrupted, but the e
 Interpretation:
 DreamZero treats action prediction as tied to a predicted future world trajectory rather than as an isolated action-only mapping.
 
+Notation help:
+see [Notation Guide](notation-guide.md#symbol-table) for $\pi_0$, $\mathbf{o}$, $\mathbf{a}$, $\mathbf{c}$, $\mathbf{q}_l$, the conditioning bar, and the range notation `0:l` / `l:l+H`.
+
 ### Noisy Interpolation
 
 $$
@@ -62,6 +66,9 @@ $$
 
 Interpretation:
 the noisy action follows the same interpolation pattern, which keeps the two modalities aligned during denoising.
+
+Notation help:
+see [Notation Guide](notation-guide.md#symbol-table) for $\mathbf{z}$, $\mathbf{a}$, $t_k$, the chunk superscript $k$, and the Gaussian endpoints with subscripts `0` and `1`.
 
 ### Flow-Matching Objective
 
@@ -82,6 +89,9 @@ Exact typography and spacing should still be spot-checked in the PDF during any 
 
 Interpretation:
 the model is trained to predict the correct denoising direction for the joint video-action state.
+
+Notation help:
+see [Notation Guide](notation-guide.md#notation-patterns) for $\mathbb{E}$, $\lVert \cdot \rVert^2$, $w(t_k)$, $\mathbf{u}_\theta$, $\mathbf{v}^k$, and the summation over $k$.
 
 ## Interpretation Rule
 
