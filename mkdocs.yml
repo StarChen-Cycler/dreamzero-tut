@@ -56,6 +56,7 @@ nav:
     - System and Inference: lecture/06-system-and-inference.md
     - Transfer and Generalization: lecture/07-transfer-and-generalization.md
     - Polanyi Lens: lecture/08-polanyi-lens.md
+    - DreamZero vs LingBot-VLA: lecture/09-dreamzero-vs-lingbot-vla.md
   - Report:
     - Standard Reference: report/dreamzero-standard-reference.md
   - Reference:

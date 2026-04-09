@@ -6,7 +6,7 @@
     "project_name": "dream-zero-guide",
     "version": "1.0.0",
     "created_at": "2026-04-07T07:37:58.061Z",
-    "updated_at": "2026-04-09T03:51:27.245Z"
+    "updated_at": "2026-04-09T03:50:57.044Z"
   },
   "tasks": {
     "3951f335-5b54-460d-a59b-22604a347f2f": {
@@ -514,7 +514,7 @@
       "id": "b54e3ec6-d8d1-431d-bb2a-448559bb11ad",
       "title": "Write DreamZero versus Lingbot-VLA comparison section",
       "description": "Investigate dreamzero-main, lingbot-va-main, and the extracted LingBot-VLA paper materials, then create a new educational comparison section in the docs that contrasts the two systems across problem framing, architecture, training, inference, data, evaluation, and codebase structure while fitting the existing course framework.",
-      "status": "completed",
+      "status": "in_review",
       "priority": "top",
       "success_criteria": [
         {
@@ -586,7 +586,7 @@
       "notes": "Context entrypoint for new sessions: read .memo/memodocs/user_spec_dream-zero-guide.md, .memo/memodocs/tech_spec_dream-zero-guide.md, CLAUDE.md, and docs/reference/source-verification.md before writing the comparison.\n\nCritical nuance discovered during investigation: sources/doc2x/lingbot-vla/lingbot-vla.md describes LingBot-VLA as a Qwen2.5-VL based VLA foundation model, while lingbot-va-main code is a Wan-based LingBot-VA causal world-modeling stack. The comparison section must state this mismatch explicitly instead of pretending the paper and code release are identical.\n\nFollow the existing course framework: root cause, logic root, equations, system, transfer, and tacit-knowledge interpretation. The new section should teach comparison, not just list differences.\n\nSaved a comparison analysis memo to .memo/memodocs, added docs/lecture/09-dreamzero-vs-lingbot-vla.md, updated docs/lecture/00-course-map.md, docs/index.md, docs/report/dreamzero-standard-reference.md, docs/reference/source-map.md, and mkdocs.yml, and verified the docs build with .venv\\\\Scripts\\\\python -m mkdocs build. The comparison explicitly distinguishes LingBot-VLA paper claims from the Wan-based LingBot-VA code release so the tutorial does not compare mismatched artifacts.",
       "c7_verified": [],
       "created_at": "2026-04-09T03:45:31.998Z",
-      "updated_at": "2026-04-09T03:51:27.245Z",
+      "updated_at": "2026-04-09T03:50:57.044Z",
       "completed_at": "2026-04-09T03:50:57.044Z",
       "edges": []
     }
@@ -627,7 +627,9 @@
     "byStatus": {
       "ready": [],
       "in_progress": [],
-      "in_review": [],
+      "in_review": [
+        "b54e3ec6-d8d1-431d-bb2a-448559bb11ad"
+      ],
       "completed": [
         "3951f335-5b54-460d-a59b-22604a347f2f",
         "879265ec-b906-4cca-9948-e5bf5c8a2c62",
@@ -635,8 +637,7 @@
         "cd0343a6-de59-423e-9ff8-8fc8b5370385",
         "c27d4d76-ca06-43ba-b361-7b625c3f8e42",
         "c4027804-2f36-4ad8-9733-e7cc07f2ed06",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a",
-        "b54e3ec6-d8d1-431d-bb2a-448559bb11ad"
+        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
       ],
       "blocked": []
     },

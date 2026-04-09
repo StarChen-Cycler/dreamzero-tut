@@ -6,7 +6,7 @@
     "project_name": "dream-zero-guide",
     "version": "1.0.0",
     "created_at": "2026-04-07T07:37:58.061Z",
-    "updated_at": "2026-04-09T03:51:27.245Z"
+    "updated_at": "2026-04-09T03:45:31.998Z"
   },
   "tasks": {
     "3951f335-5b54-460d-a59b-22604a347f2f": {
@@ -514,53 +514,50 @@
       "id": "b54e3ec6-d8d1-431d-bb2a-448559bb11ad",
       "title": "Write DreamZero versus Lingbot-VLA comparison section",
       "description": "Investigate dreamzero-main, lingbot-va-main, and the extracted LingBot-VLA paper materials, then create a new educational comparison section in the docs that contrasts the two systems across problem framing, architecture, training, inference, data, evaluation, and codebase structure while fitting the existing course framework.",
-      "status": "completed",
+      "status": "ready",
       "priority": "top",
       "success_criteria": [
         {
           "id": "6abbb1d0-1584-499b-ae5e-11a5183adeff",
           "text": "Produce 1 saved analysis memo in .memo/memodocs summarizing at least 8 comparison dimensions with evidence from both repos and the extracted LingBot-VLA source.",
-          "completed": true,
-          "completed_at": "2026-04-09T03:50:57.044Z"
+          "completed": false
         },
         {
           "id": "a48ea843-4310-4e81-86b8-d041bf1c70c8",
           "text": "Add 1 new comparison lecture page that contrasts DreamZero and LingBot-VLA or LingBot-VA across at least 8 aspects and explicitly explains the repo-versus-paper mismatch where relevant.",
-          "completed": true,
-          "completed_at": "2026-04-09T03:50:57.044Z"
+          "completed": false
         },
         {
           "id": "0993af23-a61d-4df1-bc16-41171f426919",
           "text": "Update the course framework and at least 2 related docs pages so the new comparison section is navigable and educationally integrated, then run mkdocs build successfully with 0 build errors.",
-          "completed": true,
-          "completed_at": "2026-04-09T03:50:57.044Z"
+          "completed": false
         }
       ],
       "deliverables": [
         {
           "id": "0becd529-e236-4081-b5da-725a3567cba5",
           "text": ".memo/memodocs/dreamzero-vs-lingbot-vla-analysis.md",
-          "completed": true
+          "completed": false
         },
         {
           "id": "855b0a10-3f57-4f39-a4a8-fca055bdd357",
           "text": "docs/lecture/09-dreamzero-vs-lingbot-vla.md",
-          "completed": true
+          "completed": false
         },
         {
           "id": "ec656ba0-e6d2-459a-a6ee-18d6444e580a",
           "text": "Updated docs/lecture/00-course-map.md",
-          "completed": true
+          "completed": false
         },
         {
           "id": "cde6c648-7c34-4a31-b4d3-8ba9fdb8b7f4",
           "text": "Updated docs/index.md or docs/report/dreamzero-standard-reference.md",
-          "completed": true
+          "completed": false
         },
         {
           "id": "aedee911-3efd-412a-9931-04897a51d637",
           "text": "Updated mkdocs.yml navigation",
-          "completed": true
+          "completed": false
         }
       ],
       "need_fix": [],
@@ -583,11 +580,11 @@
         ".memo/memodocs/tech_spec_dream-zero-guide.md",
         "CLAUDE.md"
       ],
-      "notes": "Context entrypoint for new sessions: read .memo/memodocs/user_spec_dream-zero-guide.md, .memo/memodocs/tech_spec_dream-zero-guide.md, CLAUDE.md, and docs/reference/source-verification.md before writing the comparison.\n\nCritical nuance discovered during investigation: sources/doc2x/lingbot-vla/lingbot-vla.md describes LingBot-VLA as a Qwen2.5-VL based VLA foundation model, while lingbot-va-main code is a Wan-based LingBot-VA causal world-modeling stack. The comparison section must state this mismatch explicitly instead of pretending the paper and code release are identical.\n\nFollow the existing course framework: root cause, logic root, equations, system, transfer, and tacit-knowledge interpretation. The new section should teach comparison, not just list differences.\n\nSaved a comparison analysis memo to .memo/memodocs, added docs/lecture/09-dreamzero-vs-lingbot-vla.md, updated docs/lecture/00-course-map.md, docs/index.md, docs/report/dreamzero-standard-reference.md, docs/reference/source-map.md, and mkdocs.yml, and verified the docs build with .venv\\\\Scripts\\\\python -m mkdocs build. The comparison explicitly distinguishes LingBot-VLA paper claims from the Wan-based LingBot-VA code release so the tutorial does not compare mismatched artifacts.",
+      "notes": "Context entrypoint for new sessions: read .memo/memodocs/user_spec_dream-zero-guide.md, .memo/memodocs/tech_spec_dream-zero-guide.md, CLAUDE.md, and docs/reference/source-verification.md before writing the comparison.\n\nCritical nuance discovered during investigation: sources/doc2x/lingbot-vla/lingbot-vla.md describes LingBot-VLA as a Qwen2.5-VL based VLA foundation model, while lingbot-va-main code is a Wan-based LingBot-VA causal world-modeling stack. The comparison section must state this mismatch explicitly instead of pretending the paper and code release are identical.\n\nFollow the existing course framework: root cause, logic root, equations, system, transfer, and tacit-knowledge interpretation. The new section should teach comparison, not just list differences.",
       "c7_verified": [],
       "created_at": "2026-04-09T03:45:31.998Z",
-      "updated_at": "2026-04-09T03:51:27.245Z",
-      "completed_at": "2026-04-09T03:50:57.044Z",
+      "updated_at": "2026-04-09T03:45:31.998Z",
+      "completed_at": null,
       "edges": []
     }
   },
@@ -625,7 +622,9 @@
   ],
   "indexes": {
     "byStatus": {
-      "ready": [],
+      "ready": [
+        "b54e3ec6-d8d1-431d-bb2a-448559bb11ad"
+      ],
       "in_progress": [],
       "in_review": [],
       "completed": [
@@ -635,8 +634,7 @@
         "cd0343a6-de59-423e-9ff8-8fc8b5370385",
         "c27d4d76-ca06-43ba-b361-7b625c3f8e42",
         "c4027804-2f36-4ad8-9733-e7cc07f2ed06",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a",
-        "b54e3ec6-d8d1-431d-bb2a-448559bb11ad"
+        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
       ],
       "blocked": []
     },
@@ -727,8 +725,7 @@
         "b54e3ec6-d8d1-431d-bb2a-448559bb11ad"
       ],
       "compare": [
-        "3951f335-5b54-460d-a59b-22604a347f2f",
-        "b54e3ec6-d8d1-431d-bb2a-448559bb11ad"
+        "3951f335-5b54-460d-a59b-22604a347f2f"
       ],
       "the": [
         "3951f335-5b54-460d-a59b-22604a347f2f",
@@ -813,14 +810,12 @@
         "879265ec-b906-4cca-9948-e5bf5c8a2c62",
         "395e913e-4e84-4d65-a853-3108d7f6fcca",
         "cd0343a6-de59-423e-9ff8-8fc8b5370385",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a",
-        "b54e3ec6-d8d1-431d-bb2a-448559bb11ad"
+        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
       ],
       "report": [
         "3951f335-5b54-460d-a59b-22604a347f2f",
         "cd0343a6-de59-423e-9ff8-8fc8b5370385",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a",
-        "b54e3ec6-d8d1-431d-bb2a-448559bb11ad"
+        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
       ],
       "tasks": [
         "3951f335-5b54-460d-a59b-22604a347f2f",
@@ -850,8 +845,7 @@
       "claims": [
         "3951f335-5b54-460d-a59b-22604a347f2f",
         "879265ec-b906-4cca-9948-e5bf5c8a2c62",
-        "cd0343a6-de59-423e-9ff8-8fc8b5370385",
-        "b54e3ec6-d8d1-431d-bb2a-448559bb11ad"
+        "cd0343a6-de59-423e-9ff8-8fc8b5370385"
       ],
       "or": [
         "3951f335-5b54-460d-a59b-22604a347f2f",
@@ -1131,8 +1125,7 @@
       "added": [
         "3951f335-5b54-460d-a59b-22604a347f2f",
         "879265ec-b906-4cca-9948-e5bf5c8a2c62",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06",
-        "b54e3ec6-d8d1-431d-bb2a-448559bb11ad"
+        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
       ],
       "prefer": [
         "3951f335-5b54-460d-a59b-22604a347f2f"
@@ -1147,8 +1140,7 @@
         "cd0343a6-de59-423e-9ff8-8fc8b5370385",
         "c27d4d76-ca06-43ba-b361-7b625c3f8e42",
         "c4027804-2f36-4ad8-9733-e7cc07f2ed06",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a",
-        "b54e3ec6-d8d1-431d-bb2a-448559bb11ad"
+        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
       ],
       "docs": [
         "3951f335-5b54-460d-a59b-22604a347f2f",
@@ -1175,15 +1167,13 @@
       ],
       "updated": [
         "3951f335-5b54-460d-a59b-22604a347f2f",
-        "cd0343a6-de59-423e-9ff8-8fc8b5370385",
-        "b54e3ec6-d8d1-431d-bb2a-448559bb11ad"
+        "cd0343a6-de59-423e-9ff8-8fc8b5370385"
       ],
       "map": [
         "3951f335-5b54-460d-a59b-22604a347f2f",
         "879265ec-b906-4cca-9948-e5bf5c8a2c62",
         "cd0343a6-de59-423e-9ff8-8fc8b5370385",
-        "c27d4d76-ca06-43ba-b361-7b625c3f8e42",
-        "b54e3ec6-d8d1-431d-bb2a-448559bb11ad"
+        "c27d4d76-ca06-43ba-b361-7b625c3f8e42"
       ],
       "to": [
         "3951f335-5b54-460d-a59b-22604a347f2f",
@@ -1192,8 +1182,7 @@
         "cd0343a6-de59-423e-9ff8-8fc8b5370385",
         "c27d4d76-ca06-43ba-b361-7b625c3f8e42",
         "c4027804-2f36-4ad8-9733-e7cc07f2ed06",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a",
-        "b54e3ec6-d8d1-431d-bb2a-448559bb11ad"
+        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
       ],
       "mkdocs": [
         "3951f335-5b54-460d-a59b-22604a347f2f",
@@ -1202,13 +1191,11 @@
         "cd0343a6-de59-423e-9ff8-8fc8b5370385",
         "c27d4d76-ca06-43ba-b361-7b625c3f8e42",
         "c4027804-2f36-4ad8-9733-e7cc07f2ed06",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a",
-        "b54e3ec6-d8d1-431d-bb2a-448559bb11ad"
+        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
       ],
       "yml": [
         "3951f335-5b54-460d-a59b-22604a347f2f",
-        "c4027804-2f36-4ad8-9733-e7cc07f2ed06",
-        "b54e3ec6-d8d1-431d-bb2a-448559bb11ad"
+        "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
       ],
       "navigation": [
         "3951f335-5b54-460d-a59b-22604a347f2f",
@@ -1222,8 +1209,7 @@
         "cd0343a6-de59-423e-9ff8-8fc8b5370385",
         "c27d4d76-ca06-43ba-b361-7b625c3f8e42",
         "c4027804-2f36-4ad8-9733-e7cc07f2ed06",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a",
-        "b54e3ec6-d8d1-431d-bb2a-448559bb11ad"
+        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
       ],
       "with": [
         "3951f335-5b54-460d-a59b-22604a347f2f",
@@ -1232,8 +1218,7 @@
         "cd0343a6-de59-423e-9ff8-8fc8b5370385",
         "c27d4d76-ca06-43ba-b361-7b625c3f8e42",
         "c4027804-2f36-4ad8-9733-e7cc07f2ed06",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a",
-        "b54e3ec6-d8d1-431d-bb2a-448559bb11ad"
+        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
       ],
       "venv": [
         "3951f335-5b54-460d-a59b-22604a347f2f",
@@ -1242,8 +1227,7 @@
         "cd0343a6-de59-423e-9ff8-8fc8b5370385",
         "c27d4d76-ca06-43ba-b361-7b625c3f8e42",
         "c4027804-2f36-4ad8-9733-e7cc07f2ed06",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a",
-        "b54e3ec6-d8d1-431d-bb2a-448559bb11ad"
+        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
       ],
       "scripts": [
         "3951f335-5b54-460d-a59b-22604a347f2f",
@@ -1252,8 +1236,7 @@
         "cd0343a6-de59-423e-9ff8-8fc8b5370385",
         "c27d4d76-ca06-43ba-b361-7b625c3f8e42",
         "c4027804-2f36-4ad8-9733-e7cc07f2ed06",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a",
-        "b54e3ec6-d8d1-431d-bb2a-448559bb11ad"
+        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
       ],
       "python": [
         "3951f335-5b54-460d-a59b-22604a347f2f",
@@ -1262,8 +1245,7 @@
         "cd0343a6-de59-423e-9ff8-8fc8b5370385",
         "c27d4d76-ca06-43ba-b361-7b625c3f8e42",
         "c4027804-2f36-4ad8-9733-e7cc07f2ed06",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a",
-        "b54e3ec6-d8d1-431d-bb2a-448559bb11ad"
+        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
       ],
       "m": [
         "3951f335-5b54-460d-a59b-22604a347f2f",
@@ -1272,8 +1254,7 @@
         "cd0343a6-de59-423e-9ff8-8fc8b5370385",
         "c27d4d76-ca06-43ba-b361-7b625c3f8e42",
         "c4027804-2f36-4ad8-9733-e7cc07f2ed06",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a",
-        "b54e3ec6-d8d1-431d-bb2a-448559bb11ad"
+        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
       ],
       "method": [
         "3951f335-5b54-460d-a59b-22604a347f2f"
@@ -1397,8 +1378,7 @@
         "395e913e-4e84-4d65-a853-3108d7f6fcca",
         "cd0343a6-de59-423e-9ff8-8fc8b5370385",
         "c4027804-2f36-4ad8-9733-e7cc07f2ed06",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a",
-        "b54e3ec6-d8d1-431d-bb2a-448559bb11ad"
+        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
       ],
       "opening": [
         "879265ec-b906-4cca-9948-e5bf5c8a2c62"
@@ -1450,8 +1430,7 @@
       ],
       "index": [
         "879265ec-b906-4cca-9948-e5bf5c8a2c62",
-        "cd0343a6-de59-423e-9ff8-8fc8b5370385",
-        "b54e3ec6-d8d1-431d-bb2a-448559bb11ad"
+        "cd0343a6-de59-423e-9ff8-8fc8b5370385"
       ],
       "this": [
         "879265ec-b906-4cca-9948-e5bf5c8a2c62",
@@ -1483,8 +1462,7 @@
         "879265ec-b906-4cca-9948-e5bf5c8a2c62"
       ],
       "does": [
-        "879265ec-b906-4cca-9948-e5bf5c8a2c62",
-        "b54e3ec6-d8d1-431d-bb2a-448559bb11ad"
+        "879265ec-b906-4cca-9948-e5bf5c8a2c62"
       ],
       "drift": [
         "879265ec-b906-4cca-9948-e5bf5c8a2c62"
@@ -1495,8 +1473,7 @@
         "cd0343a6-de59-423e-9ff8-8fc8b5370385",
         "c27d4d76-ca06-43ba-b361-7b625c3f8e42",
         "c4027804-2f36-4ad8-9733-e7cc07f2ed06",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a",
-        "b54e3ec6-d8d1-431d-bb2a-448559bb11ad"
+        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
       ],
       "corrupted": [
         "879265ec-b906-4cca-9948-e5bf5c8a2c62"
@@ -1549,8 +1526,7 @@
         "879265ec-b906-4cca-9948-e5bf5c8a2c62"
       ],
       "00": [
-        "879265ec-b906-4cca-9948-e5bf5c8a2c62",
-        "b54e3ec6-d8d1-431d-bb2a-448559bb11ad"
+        "879265ec-b906-4cca-9948-e5bf5c8a2c62"
       ],
       "04": [
         "879265ec-b906-4cca-9948-e5bf5c8a2c62"
@@ -1939,8 +1915,7 @@
       ],
       "standard": [
         "cd0343a6-de59-423e-9ff8-8fc8b5370385",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a",
-        "b54e3ec6-d8d1-431d-bb2a-448559bb11ad"
+        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
       ],
       "restate": [
         "cd0343a6-de59-423e-9ff8-8fc8b5370385"
@@ -2177,8 +2152,7 @@
       ],
       "tutorial": [
         "c4027804-2f36-4ad8-9733-e7cc07f2ed06",
-        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a",
-        "b54e3ec6-d8d1-431d-bb2a-448559bb11ad"
+        "d623cb1f-e17c-4c35-ab27-ed6ad4d0475a"
       ],
       "elsewhere": [
         "c4027804-2f36-4ad8-9733-e7cc07f2ed06"
@@ -2533,27 +2507,6 @@
         "b54e3ec6-d8d1-431d-bb2a-448559bb11ad"
       ],
       "differences": [
-        "b54e3ec6-d8d1-431d-bb2a-448559bb11ad"
-      ],
-      "saved": [
-        "b54e3ec6-d8d1-431d-bb2a-448559bb11ad"
-      ],
-      "analysis": [
-        "b54e3ec6-d8d1-431d-bb2a-448559bb11ad"
-      ],
-      "09": [
-        "b54e3ec6-d8d1-431d-bb2a-448559bb11ad"
-      ],
-      "vs": [
-        "b54e3ec6-d8d1-431d-bb2a-448559bb11ad"
-      ],
-      "distinguishes": [
-        "b54e3ec6-d8d1-431d-bb2a-448559bb11ad"
-      ],
-      "mismatched": [
-        "b54e3ec6-d8d1-431d-bb2a-448559bb11ad"
-      ],
-      "artifacts": [
         "b54e3ec6-d8d1-431d-bb2a-448559bb11ad"
       ]
     },

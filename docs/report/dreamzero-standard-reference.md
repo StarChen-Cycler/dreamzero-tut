@@ -153,6 +153,18 @@ This appears in two ways:
 - How much of the reported transfer gain depends on embodiment similarity rather than a fully general world-action representation?
 - What would happen if the sensing stack or action space changed more radically than in the paper's tested setups?
 
+## Comparison Anchor
+
+For a structured comparison against another major open robot-model release, read:
+
+- [DreamZero vs LingBot-VLA](../lecture/09-dreamzero-vs-lingbot-vla.md)
+
+That chapter is useful because it separates:
+
+- DreamZero as a world-action-model story
+- LingBot-VLA as a paper-level VLA scaling story
+- LingBot-VA as a code-level latent video-action stack
+
 ## How To Use This Report
 
 - Use the lecture chapters to teach the system.

@@ -28,6 +28,12 @@ The guide answers that question in two passes:
 - `lecture/`: a teachable path with explicit bridges for readers who are new to robotics
 - `report/`: a compact standard reference for reuse
 
+It now also includes a direct comparison chapter against LingBot-VLA or LingBot-VA so readers can see what changes when a project is framed as:
+
+- a world-action model
+- a VLA scaling program
+- or a latent video-action code release
+
 ## Design Promise
 
 Every major chapter should answer four things:
@@ -36,6 +42,10 @@ Every major chapter should answer four things:
 2. What is the root cause behind that pressure?
 3. What design move does DreamZero make?
 4. What tacit judgment does a practitioner rely on that the paper does not fully spell out?
+
+The comparison chapter adds a fifth question:
+
+5. Which differences come from the model idea itself, and which differences come from the released codebase or evaluation regime?
 
 ## Source Boundary
 

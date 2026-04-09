@@ -7,6 +7,17 @@
 - `sources/doc2x/images/`
 - `docs/reference/source-verification.md`
 
+## Comparison Sources
+
+- `lingbot-vla.pdf`
+- `sources/doc2x/lingbot-vla/lingbot-vla.md`
+- `lingbot-va-main/README.md`
+- `lingbot-va-main/wan_va/modules/model.py`
+- `lingbot-va-main/wan_va/train.py`
+- `dreamzero-main/README.md`
+- `dreamzero-main/groot/vla/model/dreamzero/base_vla.py`
+- `dreamzero-main/groot/vla/model/dreamzero/action_head/wan_flow_matching_action_tf.py`
+
 ## Context Entrypoints
 
 If the current session is gone and a new contributor needs to recover intent quickly, read these first:
@@ -62,6 +73,12 @@ When moving from lecture chapters to the standard reference:
 - preserve the verified logic root
 - keep evidence limits visible
 - keep the context entrypoints above intact for future sessions
+
+For cross-project comparison work:
+
+- distinguish paper claims from code-release claims
+- state when two names refer to non-identical systems
+- prefer direct repo or extracted-paper evidence over memory
 
 ## Recommended Workflow
 
