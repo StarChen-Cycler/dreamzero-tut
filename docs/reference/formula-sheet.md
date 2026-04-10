@@ -100,3 +100,5 @@ When using a formula in the lecture, always say:
 1. whether it is literal from the paper or a teaching simplification
 2. what practical question it answers
 3. what hidden assumption it depends on
+
+For the code-backed training sequence that uses these formulas, see [Industrial Training Guide](../lecture/10-industrial-training-guide.md).

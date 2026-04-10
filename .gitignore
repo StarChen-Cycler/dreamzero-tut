@@ -4,3 +4,14 @@ __pycache__/
 *.pyc
 .DS_Store
 .octie/project.bak.*
+.memo/
+.octie/
+.claude/
+CLAUDE.md
+sources/
+dreamzero-main/
+lingbot-va-main/
+*.pdf
+*.zip
+question-problem-routing-system-v3.md
+system-development-principles-canonical.md

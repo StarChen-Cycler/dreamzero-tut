@@ -28,10 +28,10 @@ The guide answers that question in two passes:
 - `lecture/`: a teachable path with explicit bridges for readers who are new to robotics
 - `report/`: a compact standard reference for reuse
 
-It now also includes a direct comparison chapter against LingBot-VLA or LingBot-VA so readers can see what changes when a project is framed as:
+It now also includes a direct comparison chapter against LingBot-VA so readers can see what changes when a project is framed as:
 
 - a world-action model
-- a VLA scaling program
+- a causal video-action world model
 - or a latent video-action code release
 
 ## Design Promise

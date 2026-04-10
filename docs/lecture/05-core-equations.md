@@ -143,3 +143,5 @@ This is why the equation reads like a mapping from past context to future world-
 
 The raw math was preserved from the Doc2x extraction, but the verification authority is still `DreamZero-Nvidia.pdf`.
 Use [Source Verification](../reference/source-verification.md#equation-checklist) as the starting checkpoint for any later equation cleanup.
+
+For the end-to-end training sequence that operationalizes these equations, read [Industrial Training Guide](10-industrial-training-guide.md).

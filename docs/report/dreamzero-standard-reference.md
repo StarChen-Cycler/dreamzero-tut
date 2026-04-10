@@ -157,12 +157,12 @@ This appears in two ways:
 
 For a structured comparison against another major open robot-model release, read:
 
-- [DreamZero vs LingBot-VLA](../lecture/09-dreamzero-vs-lingbot-vla.md)
+- [DreamZero vs LingBot-VA](../lecture/09-dreamzero-vs-lingbot-va.md)
 
 That chapter is useful because it separates:
 
 - DreamZero as a world-action-model story
-- LingBot-VLA as a paper-level VLA scaling story
+- LingBot-VA as a paper-level causal world-model story
 - LingBot-VA as a code-level latent video-action stack
 
 ## How To Use This Report

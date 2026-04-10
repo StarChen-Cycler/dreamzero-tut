@@ -11,6 +11,8 @@
 
 - `lingbot-vla.pdf`
 - `sources/doc2x/lingbot-vla/lingbot-vla.md`
+- `LingBot_VA_paper.pdf`
+- `sources/doc2x/lingbot-va-paper/lingbot-va-paper.md`
 - `lingbot-va-main/README.md`
 - `lingbot-va-main/wan_va/modules/model.py`
 - `lingbot-va-main/wan_va/train.py`
@@ -77,6 +79,7 @@ When moving from lecture chapters to the standard reference:
 For cross-project comparison work:
 
 - distinguish paper claims from code-release claims
+- distinguish the older LingBot-VLA paper from the newer LingBot-VA paper
 - state when two names refer to non-identical systems
 - prefer direct repo or extracted-paper evidence over memory
 
