@@ -1,6 +1,9 @@
 site_name: DreamZero Guide
 site_description: Lecture and standard reference for deconstructing DreamZero from logic root to root cause.
 site_author: Codex
+site_url: https://StarChen-Cycler.github.io/dreamzero-tut/
+repo_url: https://github.com/StarChen-Cycler/dreamzero-tut
+repo_name: StarChen-Cycler/dreamzero-tut
 docs_dir: docs
 site_dir: site
 strict: true
