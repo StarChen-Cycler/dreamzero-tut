@@ -22,6 +22,44 @@ $$
 
 In plain language, the policy is being described as "future world prediction plus action extraction conditioned on that future."
 
+More explicitly, the paper is saying that joint prediction of video and action can be decomposed into two conceptual subproblems:
+
+1. **autoregressive video prediction**
+2. **action prediction from an inverse-dynamics model (IDM)**
+
+That means Equation (1) should not be read as "two separate modules were trained independently."
+It should be read as:
+
+$$
+\text{joint world-action prediction}
+\Rightarrow
+\text{future visual rollout} + \text{action recovery from that rollout}
+$$
+
+The first factor says:
+
+- predict how the visual world will evolve from the current observation history, language instruction, and robot state
+
+The second factor says:
+
+- once the future visual trajectory is available, recover the action sequence that would make that future happen
+
+This is exactly why the paper mentions an [IDM](../reference/glossary.md#idm) here.
+An inverse-dynamics model is the part that infers actions from state transitions or desired future observations.
+So the decomposition is conceptually:
+
+$$
+\underbrace{\text{\"what future should happen\"}}_{\text{video prediction}}
+\quad + \quad
+\underbrace{\text{\"what action would realize it\"}}_{\text{inverse dynamics}}
+$$
+
+The paper's next move is important:
+
+- it uses this decomposition to explain the training objective
+- but it does **not** implement two fully separate models
+- instead, DreamZero trains one end-to-end system so video and action remain tightly aligned
+
 Symbol legend:
 
 - $\pi_0$: the DreamZero policy or model distribution
