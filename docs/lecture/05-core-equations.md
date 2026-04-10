@@ -49,9 +49,9 @@ An inverse-dynamics model is the part that infers actions from state transitions
 So the decomposition is conceptually:
 
 $$
-\underbrace{\text{\"what future should happen\"}}_{\text{video prediction}}
+\underbrace{\text{what future should happen}}_{\text{video prediction}}
 \quad + \quad
-\underbrace{\text{\"what action would realize it\"}}_{\text{inverse dynamics}}
+\underbrace{\text{what action would realize it}}_{\text{inverse dynamics}}
 $$
 
 The paper's next move is important:
